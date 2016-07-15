@@ -51,7 +51,7 @@ phylo2owl [input.(tre|phy|xml|...)] [-o output.owl]
 ## Language options
 
 * Python probably has a huge advantage, just because it’s easier to
-  install a script in Python (`easy_install tree2owl` on most Unixes)
+  install a script in Python (`easy_install phylo2owl` on most Unixes)
   than in NodeJS (need to install nodejs first, then `npm install
   phylo2owl`). And it’s pretty easy to install Python to both Windows
   and MacOS X with homebrew.
