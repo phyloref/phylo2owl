@@ -1,0 +1,8 @@
+#NEXUS
+BEGIN TAXA;
+    Dimensions NTax = 10;
+    TaxLabels 'Evaniscus rufithorax' 'Evaniscus sulcigenis' 'Evaniscus marginatus' 'Evaniscus lansdownei' 'Evaniscus tibialis' 'Evaniscus rafaeli' 'Rothevania valdivianus' 'Hyptia thoracica' 'Alobevania gattiae' 'Decevania reticulata' ;
+END;
+BEGIN TREES;
+    Tree tree6538 = (((((('Evaniscus rufithorax','Evaniscus sulcigenis'),'Evaniscus marginatus'),'Evaniscus lansdownei'),('Evaniscus tibialis','Evaniscus rafaeli')),'Rothevania valdivianus','Hyptia thoracica'),'Alobevania gattiae','Decevania reticulata');
+END;
