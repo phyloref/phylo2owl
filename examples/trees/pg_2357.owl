@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY phyloref "http://phyloinformatics.net/phyloref.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY pg_2357 "http://phyloinformatics.net/phylo/pg_2357#" >
+]>
+
+<rdf:RDF xmlns="http://phyloinformatics.net/phylo/pg_2357#"
+     xml:base="http://phyloinformatics.net/phylo/pg_2357"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pg_2357="http://phyloinformatics.net/phylo/pg_2357#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:phyloref="http://phyloinformatics.net/phyloref.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://phyloinformatics.net/phylo/pg_2357">
+        <owl:imports rdf:resource="http://phyloinformatics.net/phyloref.owl"/>
+        <owl:imports rdf:resource="&obo;cdao.owl"/>
+    </owl:Ontology>
+    
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- Insert phyloreferences here -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Node_1 -->
+
+    <owl:Thing rdf:about="&pg_2357;Node_1">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_2"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Alobevania_gattiae"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Decevania_reticulata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Node_2 -->
+
+    <owl:Thing rdf:about="&pg_2357;Node_2">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_3"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Rothevania_valdivianus"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Hyptia_thoracica"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Alobevania_gattiae"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Decevania_reticulata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Node_3 -->
+
+    <owl:Thing rdf:about="&pg_2357;Node_3">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_4"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_7"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Rothevania_valdivianus"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Hyptia_thoracica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Node_4 -->
+
+    <owl:Thing rdf:about="&pg_2357;Node_4">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_5"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_lansdownei"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Node_7"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Node_5 -->
+
+    <owl:Thing rdf:about="&pg_2357;Node_5">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_6"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_marginatus"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_lansdownei"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Node_6 -->
+
+    <owl:Thing rdf:about="&pg_2357;Node_6">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_rufithorax"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_sulcigenis"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_marginatus"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Evaniscus_rufithorax -->
+
+    <owl:Thing rdf:about="&pg_2357;Evaniscus_rufithorax">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_sulcigenis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Evaniscus_sulcigenis -->
+
+    <owl:Thing rdf:about="&pg_2357;Evaniscus_sulcigenis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_rufithorax"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Evaniscus_marginatus -->
+
+    <owl:Thing rdf:about="&pg_2357;Evaniscus_marginatus">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Node_6"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Evaniscus_lansdownei -->
+
+    <owl:Thing rdf:about="&pg_2357;Evaniscus_lansdownei">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Node_5"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Node_7 -->
+
+    <owl:Thing rdf:about="&pg_2357;Node_7">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_tibialis"/>
+        <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_rafaeli"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Node_4"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Evaniscus_tibialis -->
+
+    <owl:Thing rdf:about="&pg_2357;Evaniscus_tibialis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_rafaeli"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Evaniscus_rafaeli -->
+
+    <owl:Thing rdf:about="&pg_2357;Evaniscus_rafaeli">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_tibialis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Rothevania_valdivianus -->
+
+    <owl:Thing rdf:about="&pg_2357;Rothevania_valdivianus">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Node_3"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Hyptia_thoracica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Hyptia_thoracica -->
+
+    <owl:Thing rdf:about="&pg_2357;Hyptia_thoracica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Node_3"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Rothevania_valdivianus"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Alobevania_gattiae -->
+
+    <owl:Thing rdf:about="&pg_2357;Alobevania_gattiae">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Node_2"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Decevania_reticulata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/pg_2357#Decevania_reticulata -->
+
+    <owl:Thing rdf:about="&pg_2357;Decevania_reticulata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Node_2"/>
+        <phyloref:has_Sibling rdf:resource="&pg_2357;Alobevania_gattiae"/>
+    </owl:Thing>
+
+</rdf:RDF>
