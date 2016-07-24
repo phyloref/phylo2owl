@@ -1,5 +1,7 @@
 # phylo2owl
 
+[![Build Status](https://travis-ci.org/phyloref/phylo2owl.svg?branch=master)](https://travis-ci.org/phyloref/phylo2owl)
+
 ## Synopsis
 
 ```
