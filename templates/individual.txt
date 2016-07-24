@@ -1,0 +1,12 @@
+    <!-- {{xmlns}}{{term}} -->
+
+    <owl:Thing rdf:about="&{{name}};{{term}}">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        {{#children}}
+        <obo:CDAO_0000149 rdf:resource="&{{name}};{{child}}"/>
+        {{/children}}
+        {{#siblings}}
+        <phyloref:has_Sibling rdf:resource="&{{name}};{{sibling}}"/>
+        {{/siblings}}
+    </owl:Thing>
+
