@@ -130,3 +130,4 @@ for node in tree:
 
 # Step 7. Write out the footer.
 output_file.write(render.render_path('templates/footer.txt'))
+sys.exit(0)
