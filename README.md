@@ -31,41 +31,25 @@ phylo2owl [input.(tre|phy|xml|...)] [-o output.owl]
 
 * Use library (see below) to load input tree file in a node-based
   representation.
-* Write out a standard header based on
+* Write out [a standard header](templates/header.txt) based on
   https://github.com/hlapp/phyloref/blob/master/Campanulaceae.owl
 * For each node in the tree:
-    - Write out the node using
-      https://github.com/hlapp/phyloref/blob/master/Campanulaceae.owl
-      as a guide.
+    - Write out the node using [our individual template](templates/individual.txt)
     - (Bonus!) Write out any other metadata associated with that node
     in OWL.
-* Write out a standard footer based on
-  https://github.com/hlapp/phyloref/blob/master/Campanulaceae.owl
+* Write out [a standard footer](templates/footer.txt).
 
-## Tests
+## Testing
 
-* Load valid Newick file successfully
-* Load invalid Newick file and report a useful error (with error type
-  and line number)
-* Detect cases where output OWL would be logically inconsistent (a
-  node being the child of itself, for instance).
-
-## Language options
-
-* Python probably has a huge advantage, just because it’s easier to
-  install a script in Python (`easy_install phylo2owl` on most Unixes)
-  than in NodeJS (need to install nodejs first, then `npm install
-  phylo2owl`). And it’s pretty easy to install Python to both Windows
-  and MacOS X with homebrew.
-    - That said, npm can install to bin (see
-      https://docs.npmjs.com/files/package.json#bin), so this is
-      definitely an option.
-    - System Python on MacOS X is 2.7, which is a pain but supportable.
+We use the [py.test](http://www.pytest.org) testing framework. You can
+run the tests by running `py.tests tests` from this directory.
 
 ## Library options
 
+We currently use [DendroPy](https://pythonhosted.org/DendroPy/). Some other
+libraries we considered include:
+
 * Python:
-    - DendroPy: https://pythonhosted.org/DendroPy/ 
     - ETE Toolkit: http://etetoolkit.org/
     - Biopython: http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc204 
     - Ontospy: https://pypi.python.org/pypi/ontospy 
