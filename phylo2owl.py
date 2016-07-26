@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""phylo2owl.py: Convert phylogenies into an RDF representation."""
+"""phylo2owl.py: Convert phylogenies into OWL ontologies expressed in RDF/XML."""
 
 import argparse
 import dendropy
@@ -21,7 +21,7 @@ input_file = sys.stdin
 output_file = sys.stdout
 
 cmdline_parser = argparse.ArgumentParser(
-    description='Convert phylogenies into an RDF representation'
+    description="Convert phylogenies into OWL ontologies expressed in RDF/XML."
 )
 cmdline_parser.add_argument(
     'input_filename', metavar='input.tre', type=str, nargs='?',

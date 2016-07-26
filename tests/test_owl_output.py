@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-"""test_owl_output.py: Produces output from phylo2owl.py and tests whether its"""
+"""test_owl_output.py: Produces output from phylo2owl.py and tests whether its
+valid XML, sensible RDF/XML and OWL.
+"""
 
 from test_execute import exec_phylo2owl
 import rdflib
