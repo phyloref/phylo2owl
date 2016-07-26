@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""execute.py: Check whether phylo2owl.py can be executed in the current 
+"""test_execute.py: Check whether phylo2owl.py can be executed in the current 
 environment."""
 
 import subprocess
