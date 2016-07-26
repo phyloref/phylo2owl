@@ -1,0 +1,2 @@
+# Modules necessary for testing -- please install requirements.txt first!
+pytest
