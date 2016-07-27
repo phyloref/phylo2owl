@@ -2,6 +2,12 @@ language: python
 python:
   - "2.7"
 # command to install dependencies
-# install: "pip install -r requirements.txt"
+#
+# unfortunately needs to be custom because updating setuptools from within
+# requirements.txt fails to be seen by the html5lib installation, and the
+# version pre-installed on Travis is too low.
+install: 
+  - "pip install -U setuptools"
+  - "pip install -r requirements.txt"
 # command to run tests
 script: py.test tests
