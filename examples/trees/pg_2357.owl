@@ -62,6 +62,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Node_1">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_2"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Alobevania_gattiae"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Decevania_reticulata"/>
@@ -71,6 +72,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Node_2">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_3"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Rothevania_valdivianus"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Hyptia_thoracica"/>
@@ -82,6 +84,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Node_3">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_4"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_7"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Rothevania_valdivianus"/>
@@ -92,6 +95,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Node_4">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_5"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_lansdownei"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Node_7"/>
@@ -101,6 +105,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Node_5">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Node_6"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_marginatus"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_lansdownei"/>
@@ -110,6 +115,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Node_6">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_rufithorax"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_sulcigenis"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_marginatus"/>
@@ -119,6 +125,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Evaniscus_rufithorax">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_sulcigenis"/>
     </owl:Thing>
 
@@ -126,6 +133,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Evaniscus_sulcigenis">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_rufithorax"/>
     </owl:Thing>
 
@@ -133,6 +141,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Evaniscus_marginatus">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Node_6"/>
     </owl:Thing>
 
@@ -140,6 +149,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Evaniscus_lansdownei">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Node_5"/>
     </owl:Thing>
 
@@ -147,6 +157,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Node_7">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_tibialis"/>
         <obo:CDAO_0000149 rdf:resource="&pg_2357;Evaniscus_rafaeli"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Node_4"/>
@@ -156,6 +167,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Evaniscus_tibialis">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_rafaeli"/>
     </owl:Thing>
 
@@ -163,6 +175,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Evaniscus_rafaeli">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Evaniscus_tibialis"/>
     </owl:Thing>
 
@@ -170,6 +183,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Rothevania_valdivianus">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Node_3"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Hyptia_thoracica"/>
     </owl:Thing>
@@ -178,6 +192,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Hyptia_thoracica">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Node_3"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Rothevania_valdivianus"/>
     </owl:Thing>
@@ -186,6 +201,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Alobevania_gattiae">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Node_2"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Decevania_reticulata"/>
     </owl:Thing>
@@ -194,6 +210,7 @@
 
     <owl:Thing rdf:about="&pg_2357;Decevania_reticulata">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         <phyloref:has_Sibling rdf:resource="&pg_2357;Node_2"/>
         <phyloref:has_Sibling rdf:resource="&pg_2357;Alobevania_gattiae"/>
     </owl:Thing>
