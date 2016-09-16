@@ -47,6 +47,21 @@ def validate_owl_output(tree):
     # need to validate against OWL (or make sure that the right statements
     # are being generated).
 
+    # Test 1: At least one node should be produced.
+    CDAO_Node = rdflib.URIRef("http://purl.obolibrary.org/obo/CDAO_0000140")
+    nodes = graph.triples((None, rdflib.RDF.type, CDAO_Node))
+    assert sum(1 for n in nodes) > 0
+
+    # Test 2: Every node should have EITHER a sibling OR a child.
+    # (In some cases, this relationship will noted on another node!)
+    hasSibling = rdflib.URIRef("http://phyloinformatics.net/phyloref.owl#has_Sibling")
+    hasChild = rdflib.URIRef("http://purl.obolibrary.org/obo/CDAO_0000149")
+    for node in nodes:
+        assert  (node.s, hasSibling, None) in graph or \
+                (node.s, hasChild, None) in graph or \
+                (None, hasSibling, node.s) in graph or \
+                (None, hasChild, node.s) in graph
+
 def validate_owl_output_from_file(filename):
     """ Read a tree from a file and validate the OWL that phylo2owl produces. """
     tree = ""
