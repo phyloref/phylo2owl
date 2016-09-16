@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schema exclude-prefixes="xsi shex" xmlns="http://www.w3.org/shex/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xsi:schemaLocation="http://www.w3.org/shex/ ../xsd/ShEx.xsd" xmlns:phyloref="http://phyloinformatics.net/phyloref.owl#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:obo="http://purl.obolibrary.org/obo/">
+    <shape label="Node">
+        <someOf>
+            <group>
+                <tripleConstraint predicate="http://purl.obolibrary.org/obo/CDAO_0000149" objectType="IRI" max="unbounded"/>
+                <tripleConstraint predicate="http://phyloinformatics.net/phyloref.owl#has_Sibling" objectType="IRI" max="unbounded" min="0"/>
+            </group>
+            <group>
+                <tripleConstraint predicate="http://purl.obolibrary.org/obo/CDAO_0000149" objectType="IRI" max="unbounded" min="0"/>
+                <tripleConstraint predicate="http://phyloinformatics.net/phyloref.owl#has_Sibling" objectType="IRI" max="unbounded"/>
+            </group>
+        </someOf>
+    </shape>
+</Schema>

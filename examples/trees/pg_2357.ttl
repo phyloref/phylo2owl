@@ -1,0 +1,119 @@
+@prefix : <http://phyloinformatics.net/phylo/pg_2357#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix phyloref: <http://phyloinformatics.net/phyloref.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://phyloinformatics.net/phylo/pg_2357> a owl:Ontology ;
+    owl:imports <http://phyloinformatics.net/phyloref.owl>,
+        obo:cdao.owl .
+
+:Node_1 a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    obo:CDAO_0000149 :Alobevania_gattiae,
+        :Decevania_reticulata,
+        :Node_2 .
+
+:Evaniscus_lansdownei a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Node_5 .
+
+:Evaniscus_marginatus a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Node_6 .
+
+:Evaniscus_rafaeli a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Evaniscus_tibialis .
+
+:Evaniscus_rufithorax a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Evaniscus_sulcigenis .
+
+:Evaniscus_sulcigenis a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Evaniscus_rufithorax .
+
+:Evaniscus_tibialis a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Evaniscus_rafaeli .
+
+:Node_4 a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Node_7 ;
+    obo:CDAO_0000149 :Evaniscus_lansdownei,
+        :Node_5 .
+
+:Node_5 a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Evaniscus_lansdownei ;
+    obo:CDAO_0000149 :Evaniscus_marginatus,
+        :Node_6 .
+
+:Node_6 a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Evaniscus_marginatus ;
+    obo:CDAO_0000149 :Evaniscus_rufithorax,
+        :Evaniscus_sulcigenis .
+
+:Node_7 a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Node_4 ;
+    obo:CDAO_0000149 :Evaniscus_rafaeli,
+        :Evaniscus_tibialis .
+
+:Alobevania_gattiae a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Decevania_reticulata,
+        :Node_2 .
+
+:Decevania_reticulata a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Alobevania_gattiae,
+        :Node_2 .
+
+:Hyptia_thoracica a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Node_3,
+        :Rothevania_valdivianus .
+
+:Node_2 a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Alobevania_gattiae,
+        :Decevania_reticulata ;
+    obo:CDAO_0000149 :Hyptia_thoracica,
+        :Node_3,
+        :Rothevania_valdivianus .
+
+:Node_3 a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Hyptia_thoracica,
+        :Rothevania_valdivianus ;
+    obo:CDAO_0000149 :Node_4,
+        :Node_7 .
+
+:Rothevania_valdivianus a obo:CDAO_0000140,
+        owl:NamedIndividual,
+        owl:Thing ;
+    phyloref:has_Sibling :Hyptia_thoracica,
+        :Node_3 .
+
