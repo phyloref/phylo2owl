@@ -2,6 +2,7 @@
 
     <owl:Thing rdf:about="&{{name}};{{term}}">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
         {{#children}}
         <obo:CDAO_0000149 rdf:resource="&{{name}};{{child}}"/>
         {{/children}}
