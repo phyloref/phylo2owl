@@ -29,6 +29,10 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+/**
+ * A command-line tool to test whether a given XML file conforms to
+ * a set of SHACL shapes in a given Turtle file.
+ */
 public class testShacl {
 
     /**
