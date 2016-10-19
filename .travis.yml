@@ -1,4 +1,7 @@
-language: python
+sudo: required
+language: java
+jdk:
+  - oraclejdk8
 python:
   - "2.7"
 # command to install dependencies
@@ -7,7 +10,8 @@ python:
 # requirements.txt fails to be seen by the html5lib installation, and the
 # version pre-installed on Travis is too low.
 install: 
-  - "pip install -U setuptools"
-  - "pip install -r requirements.txt"
+  - sudo pip install --upgrade pip
+  - sudo pip install -r requirements.txt
+  - sudo pip install pytest
 # command to run tests
 script: py.test tests
