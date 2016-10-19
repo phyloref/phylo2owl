@@ -19,7 +19,7 @@ def exec_testShacl(cmdline=[], stdin=""):
     # Figure out the classpath.
     if 'JENAHOME' in environment:
         # Include environment['JENAHOME']/libexec in the classpath.
-        classpath = ["shacl-0.0.1-SNAPSHOT.jar", environment['JENAHOME'] + '/libexec/lib/*', "."]
+        classpath = ["shacl-0.0.1-SNAPSHOT.jar", environment['JENAHOME'] + '/lib/*', "."]
     else:
         # Assume that Jena is already in the classpath
         classpath = ["shacl-0.0.1-SNAPSHOT.jar", "."]
@@ -30,8 +30,8 @@ def exec_testShacl(cmdline=[], stdin=""):
     starts_with = ["java", "-cp", ":".join(classpath),  "testShacl"]
 
     # Based on http://stackoverflow.com/a/1996540/27310
-    # print starts_with
-    # print cmdline
+    print starts_with
+    print cmdline
     p = subprocess.Popen(starts_with + cmdline, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=environment, cwd="tests/java")
     stdout, stderr = p.communicate(stdin)
     print stdout

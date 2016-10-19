@@ -12,7 +12,7 @@ python:
 install: 
   - sudo mkdir /opt/jena
   - sudo curl "http://mirror.olnevhost.net/pub/apache/jena/binaries/apache-jena-3.1.0.zip" -o /opt/jena/apache-jena-3.1.0.zip
-  - sudo unzip "/opt/jena/apache-jena-3.1.0.zip"
+  - sudo unzip "/opt/jena/apache-jena-3.1.0.zip" -d "/opt/jena"
   - export JENAHOME=/opt/jena/apache-jena-3.1.0
   - sudo pip install --upgrade pip
   - sudo pip install -r requirements.txt
