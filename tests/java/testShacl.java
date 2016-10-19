@@ -48,12 +48,12 @@ public class testShacl {
         // Count the command line arguments.
         if(args.length == 1) {
             if(args[0].equalsIgnoreCase("--version")) {
-                System.out.println("testShacl " + testShacl.Version);
+                System.err.println("testShacl " + testShacl.Version);
                 System.exit(0);
             } else if(args[0].equalsIgnoreCase("--help")) {
-                System.out.println("testShacl shapes.ttl data.xml");
-                System.out.println(" - shapes.ttl: SHACL shapes to test (as a Turtle file)");
-                System.out.println(" - data.xml: data to validate (as RDF/XML)");
+                System.err.println("testShacl shapes.ttl data.xml");
+                System.err.println(" - shapes.ttl: SHACL shapes to test (as a Turtle file)");
+                System.err.println(" - data.xml: data to validate (as RDF/XML)");
                 System.exit(0);
             }
         } 
