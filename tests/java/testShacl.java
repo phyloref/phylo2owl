@@ -36,11 +36,28 @@ import java.util.*;
 public class testShacl {
 
     /**
+     * Version string.
+     */
+    public static final String Version = "0.1";
+
+    /**
      * Check command line arguments, load files as Jena models,
      * then pass them on to {@link #testSHACLModel(Model, Model)}.
      */ 
     public static void main(String[] args) {
         // Count the command line arguments.
+        if(args.length == 1) {
+            if(args[0].equalsIgnoreCase("--version")) {
+                System.out.println("testShacl " + testShacl.Version);
+                System.exit(0);
+            } else if(args[0].equalsIgnoreCase("--help")) {
+                System.out.println("testShacl shapes.ttl data.xml");
+                System.out.println(" - shapes.ttl: SHACL shapes to test (as a Turtle file)");
+                System.out.println(" - data.xml: data to validate (as RDF/XML)");
+                System.exit(0);
+            }
+        } 
+        
         if(args.length != 2) {
             System.err.println("Two arguments required: the path to the SHACL shapes to test (as a Turtle file) and the path to the data to test (as an RDF file).");
 
