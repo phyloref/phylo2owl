@@ -27,16 +27,8 @@ def exec_testShacl(cmdline=[], stdin=""):
     print stderr
     return (p.returncode, stdout, stderr)
 
-def test_execute():
-    """Make sure we can execute testShacl."""
-
-    # Can we execute testShacl at all?
-    (rc, stdout, stderr) = exec_testShacl(["--version"])
-    assert rc == 0
-    assert stderr.startswith("testShacl ")
-
-    # Test all the example trees against ValidationShapes.
-    (rc, stdout, stderr) = exec_testShacl(["../ValidationShapes.ttl", "../../examples/trees/pg_2357.owl"])
+def validateShacl(shapePath, owlPath):
+    (rc, stdout, stderr) = exec_testShacl([shapePath, owlPath])
     assert rc == 0
 
     # stdout should always be a Turtle document.
@@ -49,5 +41,19 @@ def test_execute():
 
     # There should be no triples.
     assert len(graph) == 0
-        
+ 
+
+def test_execute():
+    """Make sure we can execute testShacl."""
+
+    # Can we execute testShacl at all?
+    (rc, stdout, stderr) = exec_testShacl(["--version"])
+    assert rc == 0
+    assert stderr.startswith("testShacl ")
+
+    # Test all the example trees against ValidationShapes.
+    validateShacl("../ValidationShapes.ttl", "../../examples/trees/pg_2357.owl")  
+
+    # Test each tree against its customized validation.
+    validateShacl("../../examples/trees/pg_2357.shacl.ttl", "../../examples/trees/pg_2357.owl")
 
