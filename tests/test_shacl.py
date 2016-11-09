@@ -41,7 +41,6 @@ def validateShacl(shapePath, owlPath):
 
     # There should be no triples.
     assert len(graph) == 0
- 
 
 def test_execute():
     """Make sure we can execute testShacl."""
@@ -52,7 +51,7 @@ def test_execute():
     assert stderr.startswith("testShacl ")
 
     # Test all the example trees against ValidationShapes.
-    validateShacl("../ValidationShapes.ttl", "../../examples/trees/pg_2357.owl")  
+    validateShacl("../ValidationShapes.ttl", "../../examples/trees/pg_2357.owl")
 
     # Test each tree against its customized validation.
     validateShacl("../../examples/trees/pg_2357.shacl.ttl", "../../examples/trees/pg_2357.owl")

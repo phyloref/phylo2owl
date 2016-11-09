@@ -10,20 +10,36 @@
 
 #
 # There are some sequences we can test for in pg_2357:
-#   Node_1 --(obo:has_Child)--> Node_2 --> Node_3 --> Node_4 --> Node_5 
+#   Node_1 --(obo:has_Child)--> Node_2 --> Node_3 --> Node_4 --> Node_5
 #       --> Node_6 --> Evaniscus_rufithorax
-#   
-#   Node_4 contains (Evaniscus_lansdownei, Evaniscus_marginatus, 
-#       Evaniscus_rufithorax, Evaniscus_sulcigenis, Evaniscus_tibialis)
+
+ex:CheckSequence a sh:Shape;
+    rdfs:label "Check Node_1 -> Node_2 -> Node_3 -> ... -> Evaniscus_rufithorax";
+    sh:targetNode pg_2357:Evaniscus_rufithorax;
+
+    sh:property [
+        sh:path [ sh:inversePath [ sh:oneOrMorePath obo:CDAO_0000149 ] ];
+        sh:in (
+            pg_2357:Node_6
+            pg_2357:Node_5
+            pg_2357:Node_4
+            pg_2357:Node_3
+            pg_2357:Node_2
+            pg_2357:Node_1
+        )
+    ]
+.
+
 #
-#   If A :hasSibling B, then X :hasChild A and X :hasChild B
+#   Node_4 contains (Evaniscus_lansdownei, Evaniscus_marginatus,
+#       Evaniscus_rufithorax, Evaniscus_sulcigenis, Evaniscus_tibialis)
 
 ex:CheckEvaniscusClade a sh:Shape;
-    rdfs:label "Check if Node_4 contains all five Evaniscus species."; 
+    rdfs:label "Check if Node_4 contains all five Evaniscus species.";
     sh:targetNode pg_2357:Node_4;
     sh:class obo:CDAO_0000140;
-    sh:property [ 
-        sh:path [ sh:zeroOrMorePath obo:CDAO_0000149 ];
+    sh:property [
+        sh:path [ sh:oneOrMorePath obo:CDAO_0000149 ];
         sh:in (
             pg_2357:Evaniscus_lansdownei
             pg_2357:Evaniscus_marginatus
@@ -33,7 +49,6 @@ ex:CheckEvaniscusClade a sh:Shape;
             # TODO: Should we try getting rid of these?
             # The easiest way to do this would be to distinguish leaf
             # nodes from internal nodes.
-            pg_2357:Node_4
             pg_2357:Node_5
             pg_2357:Node_6
             pg_2357:Node_7
