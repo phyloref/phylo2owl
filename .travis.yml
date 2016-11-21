@@ -1,21 +1,19 @@
-sudo: required
-language: java
-jdk:
-  - oraclejdk8
+# Our primary language is Python.
+language: python
 python:
   - "2.7"
-# command to install dependencies
-#
-# unfortunately needs to be custom because updating setuptools from within
-# requirements.txt fails to be seen by the html5lib installation, and the
-# version pre-installed on Travis is too low.
+
+# We need Java 8 for SHACL testing.
+addons:
+  apt:
+    packages:
+      - oracle-java8-set-default
+
+# Install pip requirements.
 install: 
-  - sudo mkdir /opt/jena
-  - sudo curl "http://mirror.olnevhost.net/pub/apache/jena/binaries/apache-jena-3.1.0.zip" -o /opt/jena/apache-jena-3.1.0.zip
-  - sudo unzip "/opt/jena/apache-jena-3.1.0.zip" -d "/opt/jena"
-  - export JENAHOME=/opt/jena/apache-jena-3.1.0
-  - sudo pip install --upgrade pip
-  - sudo pip install -r requirements.txt
-  - sudo pip install pytest
-# command to run tests
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+  - pip install pytest
+
+# Run the py.test suite.
 script: py.test tests
