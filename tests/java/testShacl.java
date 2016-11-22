@@ -48,12 +48,12 @@ public class testShacl {
         // Count the command line arguments.
         if(args.length == 1) {
             if(args[0].equalsIgnoreCase("--version")) {
-                System.err.println("testShacl " + testShacl.Version);
+                System.out.println("testShacl " + testShacl.Version);
                 System.exit(0);
             } else if(args[0].equalsIgnoreCase("--help")) {
-                System.err.println("testShacl shapes.ttl data.xml");
-                System.err.println(" - shapes.ttl: SHACL shapes to test (as a Turtle file)");
-                System.err.println(" - data.xml: data to validate (as RDF/XML)");
+                System.out.println("testShacl shapes.ttl data.xml");
+                System.out.println(" - shapes.ttl: SHACL shapes to test (as a Turtle file)");
+                System.out.println(" - data.xml: data to validate (as RDF/XML)");
                 System.exit(0);
             }
         } 
@@ -95,7 +95,7 @@ public class testShacl {
         // end up with zero triples in the results model -- which
         // will look like successful validation!
         if(results.size() == 0) {
-            System.err.println("Validation passed successfully.");
+            // System.err.println("Validation passed successfully.");
             System.exit(0);
         } else {
             System.err.println("Validation failed.\n");
@@ -134,14 +134,14 @@ public class testShacl {
         // Register any SHACL functions we have.
         SHACLFunctions.registerFunctions(shapesModel);
 
-        // System.out.println(ModelPrinter.get().print(completeShapesModel));
+        // System.err.println(ModelPrinter.get().print(completeShapesModel));
 
         // Create a dataset containing both the shapes model and the data model.
         URI shapesGraphURI = URI.create("urn:x-shacl-shapes-graph:" + UUID.randomUUID().toString());
         Dataset dataset = ARQFactory.get().getDataset(dataModel);
         dataset.addNamedModel(shapesGraphURI.toString(), shapesModel);
 
-        // System.out.println(ModelPrinter.get().print(dataModel));
+        // System.err.println(ModelPrinter.get().print(dataModel));
 
         // Validate this dataset.
         Model results;
