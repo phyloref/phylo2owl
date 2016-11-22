@@ -16,18 +16,7 @@ def exec_testShacl(cmdline=[], stdin=""):
     # the JENA library.
     environment = os.environ
 
-    # Figure out the classpath.
-    if 'JENAHOME' in environment:
-        # Include environment['JENAHOME']/libexec in the classpath.
-        classpath = ["shacl-0.0.1-SNAPSHOT.jar", environment['JENAHOME'] + '/lib/*', "."]
-    else:
-        # Assume that Jena is already in the classpath
-        classpath = ["shacl-0.0.1-SNAPSHOT.jar", "."]
-
-    if 'CLASSPATH' in environment:
-        classpath = classpath + environment['CLASSPATH']
-
-    starts_with = ["java", "-cp", ":".join(classpath),  "testShacl"]
+    starts_with = ["java", "-jar", "target/testShacl-1.0-SNAPSHOT.jar"]
 
     # Based on http://stackoverflow.com/a/1996540/27310
     print starts_with
