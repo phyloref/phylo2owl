@@ -16,7 +16,7 @@ def exec_testShacl(cmdline=[], stdin=""):
     # the JENA library.
     environment = os.environ
 
-    starts_with = ["java", "-jar", "target/testShacl-1.0-SNAPSHOT.jar"]
+    starts_with = ["java", "-jar", "target/testShacl-0.1-SNAPSHOT.jar"]
 
     # Based on http://stackoverflow.com/a/1996540/27310
     print starts_with

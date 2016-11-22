@@ -14,8 +14,6 @@ install:
   - pip install --upgrade pip
   - pip install -r requirements.txt
   - pip install pytest
-  - cd tests/java
-  - mvn package
 
 # Run the py.test suite.
 script: py.test tests
