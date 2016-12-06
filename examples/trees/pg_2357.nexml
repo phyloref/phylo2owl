@@ -1,205 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<nex:nexml about="#study" generator="Phylografter nexml-json exporter" id="study" nexmljson="http://purl.org/opentree/nexson" version="0.9" xmlns="http://www.nexml.org/2009" xmlns:nex="http://www.nexml.org/2009" xmlns:ot="http://purl.org/opentree/nexson" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
- <meta property="ot:agents" xsi:type="nex:LiteralMeta">
-  <agent about="#peyotl-validator" description="validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools" id="peyotl-validator" name="validate_ot_nexson.py" url="https://github.com/OpenTreeOfLife/peyotl" version="0.0.4a">
-   <invocation>
-    <commandLine>--embed</commandLine>
-    <commandLine>--agent-only</commandLine>
-    <otherProperty>
-     <name>pythonVersion</name>
-     <value>2.7.5+</value>
-    </otherProperty>
-    <otherProperty>
-     <name>pythonImplementation</name>
-     <value>CPython</value>
-    </otherProperty>
-   </invocation>
-  </agent>
-  <agent about="#opentree-curation-webapp" description="Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project." id="opentree-curation-webapp" name="OpenTree curation webapp" url="https://github.com/OpenTreeOfLife/opentree" version="0.0.0"/>
- </meta>
- <meta property="ot:annotationEvents" xsi:type="nex:LiteralMeta">
-  <annotation about="#otu-mapping-hints" dateCreated="2014-08-18T15:58:12.623Z" description="Aids for mapping study OTUs to OTT taxa" id="otu-mapping-hints" passedChecks="true" preserve="true" wasAssociatedWithAgentId="opentree-curation-webapp">
-   <message code="OTU_MAPPING_HINTS" humanMessageType="NONE" severity="INFO">
-    <data>
-     <searchContext>Insects</searchContext>
-     <substitutions>
-      <substitution active="false" valid="true">
-       <new/>
-       <old/>
-      </substitution>
-     </substitutions>
-    </data>
-    <refersTo top="{u'$': u'meta'}"/>
-   </message>
-  </annotation>
-  <annotation about="#supporting-files-metadata" dateCreated="2014-08-18T15:58:12.623Z" description="Describes supporting data files for this study" id="supporting-files-metadata" passedChecks="true" preserve="true" wasAssociatedWithAgentId="opentree-curation-webapp">
-   <message code="SUPPORTING_FILE_INFO" humanMessageType="NONE" severity="INFO">
-    <data movedToPermanentArchive="false">
-     <files/>
-    </data>
-    <refersTo top="{u'$': u'meta'}"/>
-   </message>
-  </annotation>
-  <annotation about="#peyotl-validator-event" description="Open Tree NexSON validation" id="peyotl-validator-event" passedChecks="true" preserve="false" wasAssociatedWithAgentId="peyotl-validator">
-   <message code="MISSING_OPTIONAL_KEY" severity="WARNING">
-    <data>^ot:ottId</data>
-    <refersTo idref="[u'otu333038', u'otu333039', u'otu333042']" otuID="[u'otu333038', u'otu333039', u'otu333042']" otusID="otus2357" top="otus"/>
-   </message>
-   <message code="MULTIPLE_TIPS_MAPPED_TO_OTT_ID" severity="WARNING">
-    <data>otu333038</data>
-    <data>otu333039</data>
-    <data>otu333042</data>
-    <refersTo idref="otus2357" otusID="otus2357" top="otus"/>
-   </message>
-   <message code="UNRECOGNIZED_KEY" severity="WARNING">
-    <data>^ot:comment</data>
-    <refersTo idref="study" top="nexml"/>
-   </message>
-   <message code="MISSING_OPTIONAL_KEY" severity="WARNING">
-    <data>^ot:branchLengthMode</data>
-    <refersTo idref="tree6538" top="trees" treeID="tree6538" treesID="trees2357"/>
-   </message>
-   <message code="UNRECOGNIZED_KEY" severity="WARNING">
-    <data>^ot:nearestTaxonMRCAName</data>
-    <data>^ot:nearestTaxonMRCAOttId</data>
-    <refersTo idref="tree6538" top="trees" treeID="tree6538" treesID="trees2357"/>
-   </message>
-  </annotation>
- </meta>
- <meta datatype="xsd:string" property="ot:candidateTreeForSynthesis" xsi:type="nex:LiteralMeta">tree6538</meta>
- <meta datatype="xsd:string" property="ot:comment" xsi:type="nex:LiteralMeta"/>
- <meta datatype="xsd:string" property="ot:curatorName" xsi:type="nex:LiteralMeta">Chris Owen</meta>
- <meta datatype="xsd:string" property="ot:curatorName" xsi:type="nex:LiteralMeta">Joseph W. Brown</meta>
- <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S13316" rel="ot:dataDeposit" xsi:type="nex:ResourceMeta"/>
- <meta datatype="xsd:int" property="ot:focalClade" xsi:type="nex:LiteralMeta">73749</meta>
- <meta datatype="xsd:string" property="ot:focalCladeOTTTaxonName" xsi:type="nex:LiteralMeta">Evaniscus</meta>
- <meta property="ot:messages" xsi:type="nex:LiteralMeta"/>
- <meta datatype="xsd:boolean" property="ot:notIntendedForSynthesis" xsi:type="nex:LiteralMeta"/>
- <meta datatype="xsd:string" property="ot:studyId" xsi:type="nex:LiteralMeta">pg_2357</meta>
- <meta href="http://dx.doi.org/10.3987/zookeys.223.3572" rel="ot:studyPublication" xsi:type="nex:ResourceMeta"/>
- <meta datatype="xsd:string" property="ot:studyPublicationReference" xsi:type="nex:LiteralMeta">Mullins P.L., Kawada R., Balhoff J.P., &amp; Deans A. 2012. A revision of Evaniscus (Hymenoptera, Evaniidae) using ontology-based semantic phenotype annotation. ZooKeys 223: 1-38.</meta>
- <meta datatype="xsd:int" property="ot:studyYear" xsi:type="nex:LiteralMeta">2012</meta>
- <otus about="#otus2357" id="otus2357">
-  <otu about="#otu333034" id="otu333034" label="Rothevania valdivianus">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Rothevania valdivianus</meta>
-   <meta datatype="xsd:int" property="ot:ottId" xsi:type="nex:LiteralMeta">4563510</meta>
-   <meta datatype="xsd:string" property="ot:ottTaxonName" xsi:type="nex:LiteralMeta">Rothevania valdivianus</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915989</meta>
-  </otu>
-  <otu about="#otu333035" id="otu333035" label="Evaniscus tibialis">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Evaniscus tibialis</meta>
-   <meta datatype="xsd:int" property="ot:ottId" xsi:type="nex:LiteralMeta">3321799</meta>
-   <meta datatype="xsd:string" property="ot:ottTaxonName" xsi:type="nex:LiteralMeta">Evaniscus tibialis</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915990</meta>
-  </otu>
-  <otu about="#otu333036" id="otu333036" label="Decevania reticulata">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Decevania reticulata</meta>
-   <meta datatype="xsd:int" property="ot:ottId" xsi:type="nex:LiteralMeta">4405753</meta>
-   <meta datatype="xsd:string" property="ot:ottTaxonName" xsi:type="nex:LiteralMeta">Deroparia reticulata</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915991</meta>
-  </otu>
-  <otu about="#otu333037" id="otu333037" label="Evaniscus sulcigenis">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Evaniscus sulcigenis</meta>
-   <meta datatype="xsd:int" property="ot:ottId" xsi:type="nex:LiteralMeta">3321800</meta>
-   <meta datatype="xsd:string" property="ot:ottTaxonName" xsi:type="nex:LiteralMeta">Evaniscus sulcigenis</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915992</meta>
-  </otu>
-  <otu about="#otu333038" id="otu333038" label="Evaniscus rafaeli">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Evaniscus rafaeli</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915993</meta>
-  </otu>
-  <otu about="#otu333039" id="otu333039" label="Evaniscus lansdownei">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Evaniscus lansdownei</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915994</meta>
-  </otu>
-  <otu about="#otu333040" id="otu333040" label="Hyptia thoracica">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Hyptia thoracica</meta>
-   <meta datatype="xsd:int" property="ot:ottId" xsi:type="nex:LiteralMeta">355544</meta>
-   <meta datatype="xsd:string" property="ot:ottTaxonName" xsi:type="nex:LiteralMeta">Hyptia thoracica</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915995</meta>
-  </otu>
-  <otu about="#otu333041" id="otu333041" label="Evaniscus rufithorax">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Evaniscus rufithorax</meta>
-   <meta datatype="xsd:int" property="ot:ottId" xsi:type="nex:LiteralMeta">355480</meta>
-   <meta datatype="xsd:string" property="ot:ottTaxonName" xsi:type="nex:LiteralMeta">Evaniscus rufithorax</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915996</meta>
-  </otu>
-  <otu about="#otu333042" id="otu333042" label="Alobevania gattiae">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Alobevania gattiae</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915997</meta>
-  </otu>
-  <otu about="#otu333043" id="otu333043" label="Evaniscus marginatus">
-   <meta datatype="xsd:string" property="ot:originalLabel" xsi:type="nex:LiteralMeta">Evaniscus marginatus</meta>
-   <meta datatype="xsd:int" property="ot:ottId" xsi:type="nex:LiteralMeta">355481</meta>
-   <meta datatype="xsd:string" property="ot:ottTaxonName" xsi:type="nex:LiteralMeta">Evaniscus marginatus</meta>
-   <meta datatype="xsd:string" property="ot:treebaseOTUId" xsi:type="nex:LiteralMeta">Tl915998</meta>
-  </otu>
- </otus>
- <trees about="#trees2357" id="trees2357" otus="otus2357">
-  <tree about="#tree6538" id="tree6538" label="Maximum parsimony (exhaustive search)" xsi:type="nex:FloatTree">
-   <meta datatype="xsd:string" property="ot:branchLengthDescription" xsi:type="nex:LiteralMeta"/>
-   <meta datatype="xsd:string" property="ot:branchLengthTimeUnit" xsi:type="nex:LiteralMeta"/>
-   <meta datatype="xsd:string" property="ot:curatedType" xsi:type="nex:LiteralMeta">Maximum parsimony</meta>
-   <meta datatype="xsd:string" property="ot:inGroupClade" xsi:type="nex:LiteralMeta">node1133565</meta>
-   <meta datatype="xsd:string" property="ot:nearestTaxonMRCAName" xsi:type="nex:LiteralMeta">Evaniscus</meta>
-   <meta datatype="xsd:string" property="ot:nearestTaxonMRCAOttId" xsi:type="nex:LiteralMeta">73749</meta>
-   <meta datatype="xsd:string" property="ot:outGroupEdge" xsi:type="nex:LiteralMeta"/>
-   <meta datatype="xsd:string" property="ot:specifiedRoot" xsi:type="nex:LiteralMeta">node1133563</meta>
-   <meta datatype="xsd:string" property="ot:tag" xsi:type="nex:LiteralMeta">ingroup added;</meta>
-   <meta datatype="xsd:boolean" property="ot:unrootedTree" xsi:type="nex:LiteralMeta"/>
-   <node about="#node1133563" id="node1133563" root="true"/>
-   <node about="#node1133564" id="node1133564"/>
-   <node about="#node1133565" id="node1133565"/>
-   <node about="#node1133566" id="node1133566"/>
-   <node about="#node1133567" id="node1133567"/>
-   <node about="#node1133568" id="node1133568"/>
-   <node about="#node1133569" id="node1133569" otu="otu333041">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133570" id="node1133570" otu="otu333037">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133571" id="node1133571" otu="otu333043">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133572" id="node1133572" otu="otu333039">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133573" id="node1133573"/>
-   <node about="#node1133574" id="node1133574" otu="otu333035">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133575" id="node1133575" otu="otu333038">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133576" id="node1133576" otu="otu333034">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133577" id="node1133577" otu="otu333040">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133578" id="node1133578" otu="otu333042">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <node about="#node1133579" id="node1133579" otu="otu333036">
-    <meta datatype="xsd:boolean" property="ot:isLeaf" xsi:type="nex:LiteralMeta">true</meta>
-   </node>
-   <edge about="#edge1133564" id="edge1133564" source="node1133563" target="node1133564"/>
-   <edge about="#edge1133565" id="edge1133565" source="node1133564" target="node1133565"/>
-   <edge about="#edge1133566" id="edge1133566" source="node1133565" target="node1133566"/>
-   <edge about="#edge1133567" id="edge1133567" source="node1133566" target="node1133567"/>
-   <edge about="#edge1133568" id="edge1133568" source="node1133567" target="node1133568"/>
-   <edge about="#edge1133569" id="edge1133569" source="node1133568" target="node1133569"/>
-   <edge about="#edge1133570" id="edge1133570" source="node1133568" target="node1133570"/>
-   <edge about="#edge1133571" id="edge1133571" source="node1133567" target="node1133571"/>
-   <edge about="#edge1133572" id="edge1133572" source="node1133566" target="node1133572"/>
-   <edge about="#edge1133573" id="edge1133573" source="node1133565" target="node1133573"/>
-   <edge about="#edge1133574" id="edge1133574" source="node1133573" target="node1133574"/>
-   <edge about="#edge1133575" id="edge1133575" source="node1133573" target="node1133575"/>
-   <edge about="#edge1133576" id="edge1133576" source="node1133564" target="node1133576"/>
-   <edge about="#edge1133577" id="edge1133577" source="node1133564" target="node1133577"/>
-   <edge about="#edge1133578" id="edge1133578" source="node1133563" target="node1133578"/>
-   <edge about="#edge1133579" id="edge1133579" source="node1133563" target="node1133579"/>
-  </tree>
- </trees>
-</nex:nexml>
+<nex:nexml xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:map="http://phylomap.org/terms.owl#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="0.9" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nex="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd" generator="Bio::Phylo::Project v.0.58" xmlns="http://www.nexml.org/2009"><otus id="os2">
+<otu label="Evaniscus rufithorax" id="ou3"/>
+<otu label="Evaniscus sulcigenis" id="ou4"/>
+<otu id="ou5" label="Evaniscus marginatus"/>
+<otu label="Evaniscus lansdownei" id="ou6"/>
+<otu id="ou7" label="Evaniscus tibialis"/>
+<otu label="Evaniscus rafaeli" id="ou8"/>
+<otu label="Rothevania valdivianus" id="ou9"/>
+<otu id="ou10" label="Hyptia thoracica"/>
+<otu label="Alobevania gattiae" id="ou11"/>
+<otu id="ou12" label="Decevania reticulata"/></otus><trees otus="os2" id="ts13">
+<tree id="te15" xsi:type="nex:IntTree" label="tree6538">
+<node root="true" id="ne16"/>
+<node id="ne17"/>
+<node id="ne31" otu="ou11" label="Alobevania gattiae"/>
+<node id="ne32" label="Decevania reticulata" otu="ou12"/>
+<node id="ne18"/>
+<node otu="ou9" label="Rothevania valdivianus" id="ne29"/>
+<node label="Hyptia thoracica" otu="ou10" id="ne30"/>
+<node id="ne19"/>
+<node id="ne26"/>
+<node id="ne20"/>
+<node id="ne25" otu="ou6" label="Evaniscus lansdownei"/>
+<node label="Evaniscus tibialis" otu="ou7" id="ne27"/>
+<node id="ne28" otu="ou8" label="Evaniscus rafaeli"/>
+<node id="ne21"/>
+<node id="ne24" otu="ou5" label="Evaniscus marginatus"/>
+<node label="Evaniscus rufithorax" otu="ou3" id="ne22"/>
+<node label="Evaniscus sulcigenis" otu="ou4" id="ne23"/>
+<edge target="ne17" id="edge17" source="ne16"/>
+<edge target="ne31" id="edge31" source="ne16"/>
+<edge id="edge32" source="ne16" target="ne32"/>
+<edge id="edge18" source="ne17" target="ne18"/>
+<edge id="edge29" source="ne17" target="ne29"/>
+<edge source="ne17" id="edge30" target="ne30"/>
+<edge target="ne19" source="ne18" id="edge19"/>
+<edge target="ne26" source="ne18" id="edge26"/>
+<edge target="ne20" source="ne19" id="edge20"/>
+<edge id="edge25" source="ne19" target="ne25"/>
+<edge target="ne27" source="ne26" id="edge27"/>
+<edge target="ne28" source="ne26" id="edge28"/>
+<edge target="ne21" id="edge21" source="ne20"/>
+<edge target="ne24" id="edge24" source="ne20"/>
+<edge id="edge22" source="ne21" target="ne22"/>
+<edge source="ne21" id="edge23" target="ne23"/></tree></trees></nex:nexml>
