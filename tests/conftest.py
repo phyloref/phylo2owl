@@ -2,7 +2,6 @@
 conftest.py: Sets up some fixures to simplify test writing. 
 """
 
-import pytest
 import os
 import fnmatch
 

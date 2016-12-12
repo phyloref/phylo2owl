@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-"""libreasoner.py: Library of functions for communicating with the Reasoner Java executable."""
+"""
+libreasoner.py: Library of functions for communicating with the Reasoner Java executable.
+"""
 
 import os
 import rdflib

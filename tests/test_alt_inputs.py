@@ -11,7 +11,9 @@ import pytest
 import os
 
 def test_newick_convert_to_OWL(path_tre):
-    """ Test all .tre files by comparing them to the corresponding .owl file. """
+    """ 
+    Test all .tre files by comparing them to the corresponding .owl file.
+    """
 
     # This might seem redundant, but it tests that '--format newick' works.
 

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-"""phylo2owl.py: Convert phylogenies into OWL ontologies expressed in RDF/XML."""
+"""
+phylo2owl.py: Convert phylogenies into OWL ontologies expressed in RDF/XML.
+"""
 
 import argparse
 import dendropy
@@ -12,47 +14,61 @@ __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2016 The Phyloreferencing Project"
 
-# Global variables
+# Default settings
 FLAG_VERBOSE = False
 output_name = 'example'
+input_file = sys.stdin
+output_file = sys.stdout
 
 # Based on formats supported by DendroPy, 
 # see https://pythonhosted.org/DendroPy/schemas/index.html#specifying-the-data-source-format
 INPUT_FORMATS = ["newick", "nexus", "nexml"]
+DEFAULT_FORMAT = "newick"
 
 # Step 1. Parse command line arguments
-input_file = sys.stdin
-output_file = sys.stdout
-
 cmdline_parser = argparse.ArgumentParser(
     description="Convert phylogenies into OWL ontologies expressed in RDF/XML."
 )
 cmdline_parser.add_argument(
-    'input_filename', metavar='input.tre', type=str, nargs='?',
+    'input_filename', 
+    metavar='input.tre', 
+    type=str, 
+    nargs='?',
     help='Phylogeny file to parse'
 )
 cmdline_parser.add_argument(
-    '-f', '--format', dest='input_format', nargs='?',
-    choices=INPUT_FORMATS,
+    '-f', '--format', 
+    dest='input_format', 
+    nargs='?',
     type=str.lower, # Lowercase input type name.
-    default='newick',
+    choices=INPUT_FORMATS,
+    default=DEFAULT_FORMAT,
     help='Input format (for input filename or standard input)'
 )
 cmdline_parser.add_argument(
-    '-o', dest='output_filename', metavar='output.owl', type=str,
+    '-o', 
+    dest='output_filename', 
+    metavar='output.owl', 
+    type=str,
     help='Ontology file to output'
 )
 cmdline_parser.add_argument(
-    '-n', '--name', dest='output_name', metavar='output_name', type=str,
+    '-n', '--name', 
+    dest='output_name', 
+    metavar='output_name', 
+    type=str,
     help='Name of the resource to emit'
 )
 cmdline_parser.add_argument(
     '-v', '--version',
-    action='version', version='%(prog)s ' + __version__
+    action='version', 
+    version='%(prog)s ' + __version__
 )
 cmdline_parser.add_argument(
     '--verbose', 
-    dest='flag_verbose', default=False, action='store_true', 
+    dest='flag_verbose', 
+    default=False, 
+    action='store_true', 
     help='Display debugging information'
 )
 args = cmdline_parser.parse_args()
@@ -128,7 +144,6 @@ if FLAG_VERBOSE:
     sys.stderr.write("\n")
 
 # Step 6. Write out each node on the tree.
-import inspect
 node_count = 1
 for node in tree:
     output_file.write(render.render_path('templates/individual.txt', {

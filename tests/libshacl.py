@@ -5,11 +5,9 @@ libshacl.py: Library of functions for communicating with the SHACL Java
 executable.
 """
 
-import os
 import rdflib
 import subprocess
 import xml.sax
-
 
 def exec_testShacl(args):
     """

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-"""test_shacl.py: Test generated ontologies against SHACL shapes."""
+"""
+test_shacl.py: Test generated ontologies against SHACL shapes.
+"""
 
 import os
 import libshacl

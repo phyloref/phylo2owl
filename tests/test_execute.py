@@ -7,7 +7,7 @@ environment.
 
 import libphylo2owl
 
-def test_execute():
+def test_execute_phylo2owl_py():
     """Make sure we can execute phylo2owl.py."""
 
     # Can we execute phylo2owl.py?

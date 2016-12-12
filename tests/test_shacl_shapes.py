@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-"""test_shacl_shapes.py: Test SHACL shapes by querying them against failing trees."""
+"""
+test_shacl_shapes.py: Test SHACL shapes by querying them against failing trees.
+"""
 
-import os
 from rdflib import BNode, URIRef
 from rdflib.graph import Graph
 from rdflib.namespace import RDF, RDFS

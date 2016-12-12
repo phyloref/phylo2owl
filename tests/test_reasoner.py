@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 
-"""test_reasoner.py: Test phyloreferences against reasoner."""
+"""
+test_reasoner.py: Test phyloreferences against reasoner.
+"""
 
-import os
-import rdflib
-import subprocess
-import xml.sax
 from libreasoner import validateWithReasoner
 
 def test_phylorefs_using_reasoner(path_owl):
