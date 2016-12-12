@@ -15,7 +15,7 @@ def compare_example_file(basename, ext, input_type):
     file (basename + ext with type input_type) through phylo2owl, 
     and see if its identical to the corresponding OWL file (basename + ".owl")
     """
-    (rc, stdout, stderr) = exec_phylo2owl([basename + ext, "-t", input_type])
+    (rc, stdout, stderr) = exec_phylo2owl([basename + ext, "--format", input_type])
     print(stderr)
     assert rc == 0
     

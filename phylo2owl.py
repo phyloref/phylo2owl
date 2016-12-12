@@ -16,9 +16,9 @@ __copyright__ = "Copyright 2016 The Phyloreferencing Project"
 FLAG_VERBOSE = False
 output_name = 'example'
 
-# Based on types supported by DendroPy, 
+# Based on formats supported by DendroPy, 
 # see https://pythonhosted.org/DendroPy/schemas/index.html#specifying-the-data-source-format
-INPUT_TYPES = ["newick", "nexus", "nexml"]
+INPUT_FORMATS = ["newick", "nexus", "nexml"]
 
 # Step 1. Parse command line arguments
 input_file = sys.stdin
@@ -32,11 +32,11 @@ cmdline_parser.add_argument(
     help='Phylogeny file to parse'
 )
 cmdline_parser.add_argument(
-    '-t', '--type', dest='input_type', nargs='?',
-    choices=INPUT_TYPES,
+    '-f', '--format', dest='input_format', nargs='?',
+    choices=INPUT_FORMATS,
     type=str.lower, # Lowercase input type name.
     default='newick',
-    help='Input type (for input filename or standard input)'
+    help='Input format (for input filename or standard input)'
 )
 cmdline_parser.add_argument(
     '-o', dest='output_filename', metavar='output.owl', type=str,
@@ -86,7 +86,7 @@ if FLAG_VERBOSE:
 
 # Step 2. Use DendroPy to read input tree.
 try:
-    tree = dendropy.Tree.get(file=input_file, schema=args.input_type)
+    tree = dendropy.Tree.get(file=input_file, schema=args.input_format)
 except dendropy.utility.error.DataParseError as err:
     sys.stderr.write("Error: could not parse input!\n{0}\n".format(err))
     sys.exit(1)
