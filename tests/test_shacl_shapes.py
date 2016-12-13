@@ -51,6 +51,10 @@ def test_shacl_shapes():
     g.add((node3, phyloref_has_Sibling, node2))
     save_graph_and_validate(g, True)
 
+    # No node should be the child of itself.
+    g.add((node2, CDAO_hasChild, node2))
+    save_graph_and_validate(g, False)
+
 def save_graph_and_validate(graph, expect_valid):
     """Write a graph to a temporary file, and then validate it."""
 
