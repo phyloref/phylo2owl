@@ -19,6 +19,7 @@ ex:Node a sh:Shape;
     sh:or (
         [
             # 1. A CDAO:hasChild relationship with another node.
+            sh:message "Every node must have a hasChild relationship with another node.";
             sh:property [
                 sh:predicate obo:CDAO_0000149;
                 sh:class obo:CDAO_0000140;
@@ -27,6 +28,7 @@ ex:Node a sh:Shape;
         ]
         [
             # 2. A phyloref:has_Sibling relationship with another node.
+            sh:message "Every node must have a has_Sibling relationship with another node.";
             sh:property [
                 sh:predicate phyloref:has_Sibling;
                 sh:class obo:CDAO_0000140;
@@ -34,4 +36,11 @@ ex:Node a sh:Shape;
             ];
         ]
     );
+
+    # No node should be a child of itself.
+    sh:sparql [
+        a sh:SPARQLConstraint;
+        sh:message "No node should be a child of itself.";
+        sh:select "SELECT * WHERE { $this <http://purl.obolibrary.org/obo/CDAO_0000149> $this }";
+    ];
 .
