@@ -21,7 +21,7 @@ def exec_testShacl(cmdline=[], stdin=""):
     # Based on http://stackoverflow.com/a/1996540/27310
     print starts_with
     print cmdline
-    p = subprocess.Popen(starts_with + cmdline, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=environment, cwd="tests/java")
+    p = subprocess.Popen(starts_with + cmdline, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=environment, cwd="tests/shacl")
     stdout, stderr = p.communicate(stdin)
     print stdout
     print stderr
