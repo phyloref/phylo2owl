@@ -5,18 +5,27 @@
 ## Synopsis
 
 ```
-phylo2owl [input.(tre|phy|xml|...)] [-f format] [-o output.owl]
+phylo2owl [input.(tre|nex|xml|...)] [-f format] [-o output.owl]
 ```
 
 ## Command line options
 
-* *Default:* read from standard input, write to standard output
-* *Input files:* Tree files to convert
-* *Output:* Where the output ontology should be written. 
+* *Default*: read a Newick tree from standard input, 
+  write an OWL representation of the tree to standard output.
+* *Input files*: Tree files to convert.
+* *Output* (`-o`): Where the output ontology should be written. 
   The base name of this file (e.g. 'output' in 'output.owl')
   is used as the short prefix for nodes in this ontology in the
   output file.
-* *Format:* Currently, '[newick](http://en.wikipedia.org/wiki/Newick_format)', '[nexus](http://en.wikipedia.org/wiki/Nexus_file)' and '[nexml](http://en.wikipedia.org/wiki/NeXML_format)' are supported.
+* *Output name* (`-n` or `--name`): A short name for the ontology. 
+  Defaults to the name of the output file.
+* *Format* (`-f` or `--format`): Currently, 
+  '[newick](http://en.wikipedia.org/wiki/Newick_format)', 
+  '[nexus](http://en.wikipedia.org/wiki/Nexus_file)' and 
+  '[nexml](http://en.wikipedia.org/wiki/NeXML_format)' are 
+  supported.
+* *Help* (`-h` or `--help`): Describes the usage of the program and
+  every command line option.
 
 ## Requirements
 
