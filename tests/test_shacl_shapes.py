@@ -64,7 +64,7 @@ def save_graph_and_validate(graph, expect_valid):
         graph.serialize(f.name, format="xml")
 
         # Test graph against ValidationShapes.
-        libshacl.validateShacl("../ValidationShapes.ttl", f.name, expect_valid=expect_valid)
+        libshacl.validateShacl("tests/shapes/NodeShape.ttl", f.name, expect_valid=expect_valid)
     
         # TODO: This should clear the stdout gathered by pytest
         # upto this point so we only show the results of the
