@@ -7,11 +7,11 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
     Import: <http://phyloinformatics.net/phyloref.owl>
     Import: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
 
-    Class: crowl_et_al:clade_C1_subclade
+    Class: crowl_et_al:clade_C1
         SubClassOf: phyloref:Phyloreference
         EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (obo:CDAO_0000149 some (obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and phyloref:excludes_lineage_to value crowl_et_al:Trachelium_caeruleum))
 
-    Class: crowl_et_al:clade_C1_subclade_expected
+    Class: crowl_et_al:clade_C1_expected
         EquivalentTo: {
             crowl_et_al:Azorina_vidalii,
             crowl_et_al:Campanula_alliariifolia,
