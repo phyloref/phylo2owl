@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 
-"""test_owl_output.py: Produces output from phylo2owl.py and tests whether its
+"""
+test_owl_output.py: Produces output from phylo2owl.py and tests whether its
 valid XML, sensible RDF/XML and OWL.
 """
 
-import os
-import fnmatch
-from test_execute import exec_phylo2owl
+import libphylo2owl
 import rdflib
+import os
 import xml.sax
 
 def compare_example_file(path_tre, path_owl):
@@ -15,7 +15,7 @@ def compare_example_file(path_tre, path_owl):
     through phylo2owl, and see if its identical to the corresponding OWL file
     (path_owl).
     """
-    (rc, stdout, stderr) = exec_phylo2owl([path_tre])
+    (rc, stdout, stderr) = libphylo2owl.exec_phylo2owl([path_tre])
     assert rc == 0
  
     with open(path_owl) as f:
@@ -26,7 +26,7 @@ def compare_example_file(path_tre, path_owl):
 def validate_owl_output(tree):
     """ Use an RDF library to make sure that phylo2owl is emitting
     sensible, well-formed RDF/XML. """
-    (rc, stdout, stderr) = exec_phylo2owl(["--name", "test"], tree)
+    (rc, stdout, stderr) = libphylo2owl.exec_phylo2owl(["--name", "test"], tree)
     print stderr
     assert rc == 0
 
@@ -50,39 +50,35 @@ def validate_owl_output_from_file(filename):
 
     validate_owl_output(tree)
 
-def test_example_files():
+def test_example_files(paths_tre):
     """ List of pre-converted example files to test. """
 
     examples_dir = "examples/trees";
 
     count = 0
-    for file_tre in os.listdir(examples_dir):
-        if fnmatch.fnmatch(file_tre, "*.tre"): 
-            path_tre = examples_dir + "/" + file_tre
-            path_owl = examples_dir + "/" + file_tre[:-3] + "owl"
+    for path_tre in paths_tre:
+        path_owl = path_tre[:-3] + "owl"
 
-            if os.path.isfile(path_owl):
-                print "Converting " + path_tre + " to " + path_owl + " using phylo2owl."
-                compare_example_file(path_tre, path_owl)
-                count += 1
+        if os.path.isfile(path_owl):
+            print "Converting " + path_tre + " to " + path_owl + " using phylo2owl."
+            compare_example_file(path_tre, path_owl)
+            count += 1
 
     assert count > 0
 
-def test_validate_owl_output():
+def test_validate_owl_output(paths_tre):
     """ List of trees to parse. """
     validate_owl_output("((A, B), C);")
 
     examples_dir = "examples/trees";
 
     count = 0
-    for file_tre in os.listdir(examples_dir):
-        if fnmatch.fnmatch(file_tre, "*.tre"):
-            path_tre = examples_dir + "/" + file_tre
-            path_owl = examples_dir + "/" + file_tre[:-3] + "owl"
+    for path_tre in paths_tre:
+        path_owl = path_tre[:-3] + "owl"
 
-            if os.path.isfile(path_owl):
-                print "Validating OWL output from phylo2owl."
-                validate_owl_output_from_file("examples/trees/pg_2357.tre")
-                count += 1
+        if os.path.isfile(path_owl):
+            print "Validating OWL output from phylo2owl."
+            validate_owl_output_from_file(path_tre)
+            count += 1
 
     assert count > 0
