@@ -120,17 +120,17 @@ public class testShacl {
         Model coreSHACLModel = JenaUtil.createMemoryModel();
         try {
             shapesModel.read(
-                new FileInputStream(new File("dash.ttl")),
+                testShacl.class.getResourceAsStream("/dash.ttl"),
                 null,
                 FileUtils.langTurtle
             );
             shapesModel.read(
-                new FileInputStream(new File("shacl.ttl")),
+                testShacl.class.getResourceAsStream(("/shacl.ttl")),
                 null,
                 FileUtils.langTurtle
             );
-        } catch(IOException e) {
-            throw new RuntimeException("Could not load 'shacl.ttl' and 'dash.ttl': " + e);
+        } catch(NullPointerException e) {
+            throw new RuntimeException("Could not load 'shacl.ttl' and 'dash.ttl' from resources: " + e);
         }
 
         // Register any SHACL functions we have.
