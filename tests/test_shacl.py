@@ -14,8 +14,10 @@ def test_execute():
 
     # Can we execute testShacl at all?
     (rc, stdout, stderr) = libshacl.exec_testShacl(["--version"])
+    print stdout
+    print stderr
     assert rc == 0
-    assert stderr.startswith("testShacl ")
+    assert stdout.startswith("testShacl ")
 
     # Test all the example trees against ValidationShapes.
     examples_dir = "examples/trees"
@@ -28,12 +30,12 @@ def test_execute():
             path_shacl = examples_dir + "/" + file_owl[:-3] + "shacl.ttl"
 
             print "Validating " + path_owl + " against shacl/NodeShape.ttl"
-            libshacl.validateShacl("../shapes/NodeShape.ttl", "../" + path_owl)
+            libshacl.validateShacl("tests/shapes/NodeShape.ttl", path_owl)
             count_owl += 1
 
             if os.path.isfile(path_shacl): 
                 print "Validating " + path_owl + " against its custom SHACL file, " + path_shacl
-                libshacl.validateShacl("../" + path_shacl, "../" + path_owl)
+                libshacl.validateShacl(path_shacl, path_owl)
                 count_shacl += 1
     
     assert count_owl > 0
