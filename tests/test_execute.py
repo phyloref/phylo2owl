@@ -5,7 +5,6 @@ test_execute.py: Check whether phylo2owl.py can be executed in the current
 environment.
 """
 
-import subprocess
 import libphylo2owl
 
 def test_execute():
