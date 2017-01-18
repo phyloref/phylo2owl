@@ -3,39 +3,25 @@
 """test_shacl.py: Test generated ontologies against SHACL shapes."""
 
 import os
-import fnmatch
-import rdflib
-import subprocess
-import xml.sax
 import libshacl
 
-def test_execute(paths_owl):
-    """Make sure we can execute testShacl."""
-
-    # Can we execute testShacl at all?
+def test_execute_testShacl():
+    """ Can we execute testShacl at all? """
     (rc, stdout, stderr) = libshacl.exec_testShacl(["--version"])
     print stdout
     print stderr
     assert rc == 0
     assert stdout.startswith("testShacl ")
 
-    # Test all the example trees against ValidationShapes.
-    examples_dir = "examples/trees"
+def test_execute(path_owl):
+    """ Execute testShacl on every OWL file against NodeShape.ttl, and -- if
+    they have a corresponding shacl.ttl file -- that as well. """
 
-    count_owl = 0
-    count_shacl = 0
-    for path_owl in paths_owl:
-        path_shacl = path_owl[:-3] + "shacl.ttl"
+    path_shacl = path_owl[:-3] + "shacl.ttl"
 
-        print "Validating " + path_owl + " against shacl/NodeShape.ttl"
-        libshacl.validateShacl("tests/shapes/NodeShape.ttl", path_owl)
-        count_owl += 1
+    print "Validating {0} against shacl/NodeShape.ttl".format(path_owl)
+    libshacl.validateShacl("tests/shapes/NodeShape.ttl", path_owl)
 
-        if os.path.isfile(path_shacl): 
-            print "Validating " + path_owl + " against its custom SHACL file, " + path_shacl
-            libshacl.validateShacl(path_shacl, path_owl)
-            count_shacl += 1
-    
-    assert count_owl > 0
-    assert count_shacl > 0
-
+    if os.path.isfile(path_shacl): 
+        print "Validating {0} against its custom SHACL file, {1}".format(path_owl, path_shacl)
+        libshacl.validateShacl(path_shacl, path_owl)

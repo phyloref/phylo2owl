@@ -7,29 +7,26 @@ same RDF/XML output.
 """
 
 import libphylo2owl
-import rdflib
-import xml.sax
+import pytest
 
-def test_example_files():
+@pytest.mark.parametrize("input_file, input_format, expected_output_file", [
+    ("pg_2357.tre", "newick", "pg_2357.owl"),
+    ("pg_2357.nex", "NEXUS", "pg_2357.owl"),
+    ("pg_2357.nexml", "NeXML", "pg_2357.owl")
+])
+def test_example_file(input_file, input_format, expected_output_file):
     """ 
-    List of pre-converted example files to test. 
+    For a given input file and format, generate OWL output, and then compare
+    it with the expected output file to make sure it's identical.
     """
 
-    compare_example_file("examples/trees/pg_2357", ".tre", "newick")
-    compare_example_file("examples/trees/pg_2357", ".nex", "NEXUS")
-    compare_example_file("examples/trees/pg_2357", ".nexml", "NeXML")
-
-def compare_example_file(basename, ext, input_type):
-    """ 
-    For a given basename, run the corresponding Newick 
-    file (basename + ext with type input_type) through phylo2owl, 
-    and see if its identical to the corresponding OWL file (basename + ".owl")
-    """
-
-    (rc, stdout, stderr) = libphylo2owl.exec_phylo2owl([basename + ext, "--format", input_type])
+    (rc, stdout, stderr) = libphylo2owl.exec_phylo2owl([
+        pytest.basedir + input_file, 
+        "--format", input_format
+    ])
     assert rc == 0
     
-    with open(basename + ".owl") as f:
+    with open(pytest.basedir + expected_output_file) as f:
         expected_output = f.read()
 
     assert expected_output == stdout
