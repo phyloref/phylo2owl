@@ -16,4 +16,4 @@ install:
   - pip install pytest
 
 # Run the py.test suite.
-script: py.test tests
+script: py.test -v tests
