@@ -15,12 +15,12 @@ def exec_reasoner(cmdline=[], stdin=""):
 
     environment = os.environ
 
-    starts_with = ["java", "-jar", "target/reasoner-0.1-SNAPSHOT.jar"]
+    starts_with = ["java", "-jar", "tests/reasoner/target/reasoner-0.1-SNAPSHOT.jar"]
 
     # Based on http://stackoverflow.com/a/1996540/27310
     print starts_with
     print cmdline
-    p = subprocess.Popen(starts_with + cmdline, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=environment, cwd="tests/reasoner")
+    p = subprocess.Popen(starts_with + cmdline, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=environment)
     stdout, stderr = p.communicate(stdin)
     # print stdout
     print stderr

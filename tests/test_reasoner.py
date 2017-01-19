@@ -3,12 +3,17 @@
 """test_reasoner.py: Test phyloreferences against reasoner."""
 
 import os
-import rdflib
-import subprocess
-import xml.sax
-from libreasoner import validateWithReasoner
+import libreasoner
+import pytest
 
-def test_execute():
-    """ Validate one tree against its phyloreferences. """
-    validateWithReasoner('../../examples/trees/pg_2357.owl', '../../examples/trees/pg_2357.phylorefs.omn')
+def test_execute(path_owl):
+    """ Validate a tree against its phyloreferences. """
+    path_phylorefs = path_owl[:-4] + '.phylorefs.omn'
+    if os.path.isfile(path_phylorefs):
+        libreasoner.validateWithReasoner(path_owl, path_phylorefs)
+    else:
+        pytest.skip("OWL file '{0}' doesn't have a corresponding phylorefs file '{1}'".format(
+            path_owl,
+            path_phylorefs
+        ))
 
