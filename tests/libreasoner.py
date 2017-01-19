@@ -51,6 +51,9 @@ def validateWithReasoner(treePath, phylorefPath):
     allClasses = set(graph.objects(None, RDF.type))
     expectedClasses = filter(lambda x: x.endswith(u'_expected'), allClasses)
 
+    # Make sure we have at least one expected class.
+    assert len(expectedClasses) > 0
+
     for cl in expectedClasses:
         # For every 'X_expected' class, identify the 'X' class with
         # observed values.
@@ -62,7 +65,16 @@ def validateWithReasoner(treePath, phylorefPath):
         expectedIndividuals = sorted(list(graph.subjects(RDF.type, expectedClass)))
         observedIndividuals = sorted(list(graph.subjects(RDF.type, observedClass)))
 
-        # Test that these two lists are identical.
+        # Make sure neither class is empty
+        assert len(expectedIndividuals) > 0
+        assert len(observedIndividuals) > 0
+        
+        # For debugging, write out the two lists.
         print "Comparing classes '%s' and '%s'." % (expectedClass, observedClass)
+        print " - " + expectedClass + ":\n   - " + "\n   - ".join(expectedIndividuals)
+        print " - " + observedClass + ":\n   - " + "\n   - ".join(observedIndividuals)
+
+        # Test that these two lists are identical.
+        assert len(expectedIndividuals) == len(observedIndividuals)
         assert expectedIndividuals == observedIndividuals
 
