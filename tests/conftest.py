@@ -15,38 +15,26 @@ def pytest_namespace():
     }
 
 def pytest_generate_tests(metafunc):
-    """ Add hooks for tests with parameters 'path_tre' or 'path_owl'. """
+    """ Add hooks for tests that need a parametrized list of paths with a
+    particular extension. """
 
-    # If a test contains 'path_tre', parametrize() each filename so that
-    # each tested file appears in the logs.
-    if 'path_tre' in metafunc.fixturenames:
-        metafunc.parametrize('path_tre', paths_tre())
-    
-    # If a test contains 'path_owl', parametrize() each filename so that
-    # each tested file appears in the logs.
-    if 'path_owl' in metafunc.fixturenames:
-        metafunc.parametrize('path_owl', paths_owl())
+    extensions = {
+        'path_tre': 'tre',
+        'path_owl': 'owl',
+        'path_nex': 'nex',
+        'path_nexml': 'nexml'
+    }
 
-@pytest.fixture(scope="module")
-def paths_tre():
-    """ If a test contains 'paths_tre', it becomes a list of Newick files. """
+    for key in extensions:
+        if key in metafunc.fixturenames:
+            metafunc.parametrize(key, paths_by_extension(extensions[key]))
 
-    paths_tre = []
-    for file_tre in os.listdir(examples_dir):
-        if fnmatch.fnmatch(file_tre, "*.tre"):
-            path_tre = examples_dir + "/" + file_tre
-            paths_tre.append(path_tre)
+def paths_by_extension(extension):
+    """ Return a list of files in the examples directory that has a particular extension. """
 
-    return paths_tre
+    paths = []
+    for filename in os.listdir(examples_dir):
+        if fnmatch.fnmatch(filename, "*." + extension):
+            paths.append(examples_dir + "/" + filename)
 
-@pytest.fixture(scope="module")
-def paths_owl():
-    """ If a test contains 'paths_owl', it becomes a list of OWL files. """
-
-    paths_owl = []
-    for file_owl in os.listdir(examples_dir):
-        if fnmatch.fnmatch(file_owl, "*.owl"):
-            path_owl = examples_dir + "/" + file_owl
-            paths_owl.append(path_owl)
-    
-    return paths_owl
+    return paths

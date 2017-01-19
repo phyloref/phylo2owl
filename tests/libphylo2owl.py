@@ -25,4 +25,6 @@ def exec_phylo2owl(args=[], stdin=""):
         stderr=subprocess.PIPE
     )
     stdout, stderr = p.communicate(stdin)
+    print stdout
+    print stderr
     return (p.returncode, stdout, stderr)
