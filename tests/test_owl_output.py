@@ -12,11 +12,11 @@ import os
 import xml.sax
 import pytest
 
-def test_simple_owl():
+def test_simple_phylogeny():
     """ Test if we can convert a simple phylogeny into an OWL representation."""
-    validate_owl_output("((A, B), C);")
+    validate_tree_output_as_rdfxml("((A, B), C);")
 
-def test_example_files(path_tre):
+def test_produced_owl_files(path_tre):
     """ 
     For every Newick file, convert it into an OWL file and test whether
     it is identical to the pre-generated OWL file we have.
@@ -33,21 +33,23 @@ def test_example_files(path_tre):
             expected_output = f.read()
 
         assert expected_output == stdout
+    else:
+        pytest.skip("Newick file '{0}' doesn't have a corresponding OWL file to test at '{1}'".format(
+            path_tre,
+            path_owl
+        ))
 
-def test_validate_owl_output(path_tre):
-    path_owl = path_tre[:-3] + "owl"
+def test_output_is_valid_rdfxml(path_tre):
+    print "Validating OWL output from phylo2owl."
+    with open(path_tre) as f:
+        tree = f.read()
 
-    if os.path.isfile(path_owl):
-        print "Validating OWL output from phylo2owl."
-        with open(path_tre) as f:
-            tree = f.read()
+    validate_tree_output_as_rdfxml(tree)
 
-        validate_owl_output(tree)
-
-def validate_owl_output(tree):
-    """ Use an RDF library to make sure that phylo2owl is emitting
-    sensible, well-formed RDF/XML. """
-    (rc, stdout, stderr) = libphylo2owl.exec_phylo2owl(["--name", "test"], tree)
+def validate_tree_output_as_rdfxml(tree_content):
+    """ Use an RDF library to make sure that phylo2owl emits well-formed RDF/XML
+    for a given phylogeny."""
+    (rc, stdout, stderr) = libphylo2owl.exec_phylo2owl(["--name", "test"], tree_content)
     print stderr
     assert rc == 0
 
