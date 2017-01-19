@@ -1,0 +1,52 @@
+Prefix: pg_2357: <http://phyloinformatics.net/phylo/pg_2357#>
+Prefix: obo: <http://purl.obolibrary.org/obo/>
+Prefix: phyloref: <http://phyloinformatics.net/phyloref.owl#>
+
+Ontology: <http://phyloinformatics.net/phylo/pg_2357>
+    Import: <http://purl.obolibrary.org/obo/cdao.owl>
+    Import: <http://phyloinformatics.net/phyloref.owl>
+    Import: <http://phyloinformatics.net/phylo/pg_2357>
+
+    Class: pg_2357:Evaniscus_parent
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000140 that phyloref:excludes_lineage_to value pg_2357:Rothevania_valdivianus and obo:CDAO_0000174 value pg_2357:Evaniscus_tibialis
+
+    Class: pg_2357:Evaniscus_clade
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some pg_2357:Evaniscus_parent
+
+    Class: pg_2357:Evaniscus_clade_expected
+        EquivalentTo: { 
+            pg_2357:Evaniscus_lansdownei,
+            pg_2357:Evaniscus_marginatus,
+            pg_2357:Evaniscus_rufithorax,
+            pg_2357:Evaniscus_sulcigenis,
+            pg_2357:Evaniscus_tibialis,
+            pg_2357:Evaniscus_rafaeli,
+            # TODO: Should we try getting rid of these?
+            # The easiest way to do this would be to distinguish leaf
+            # nodes from internal nodes.
+            pg_2357:Node_4,
+            pg_2357:Node_5,
+            pg_2357:Node_6,
+            pg_2357:Node_7
+        }
+
+    Class: pg_2357:Evaniscus_marginatus_ex_tibialis_parent
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000140 that phyloref:excludes_lineage_to value pg_2357:Evaniscus_tibialis and obo:CDAO_0000174 value pg_2357:Evaniscus_marginatus
+
+    Class: pg_2357:Evaniscus_marginatus_ex_tibialis_clade
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some pg_2357:Evaniscus_marginatus_ex_tibialis_parent
+
+    Class: pg_2357:Evaniscus_marginatus_ex_tibialis_clade_expected
+        EquivalentTo: {
+            pg_2357:Evaniscus_rufithorax,
+            pg_2357:Evaniscus_sulcigenis,
+            pg_2357:Evaniscus_marginatus,
+            pg_2357:Evaniscus_lansdownei,
+            pg_2357:Node_6,
+            pg_2357:Node_5
+        }
+
