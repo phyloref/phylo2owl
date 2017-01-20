@@ -81,30 +81,50 @@ public class reasoner {
                 System.exit(1);
             }
 
-            // Reason over the tree and phyloreferences.
-            // This produces a set of OWL classes and the
-            // individuals they are linked to.
-            Map<OWLClass, Set<OWLNamedIndividual>> results;
+            // If run in interactive mode, re-run the inferences when the user
+            // hits enter.
+            String filter = "";
+            Console console = System.console();
+            boolean repeat = false;
 
-            try {
-                results = getIndividualsByClass(fTree, fPhylorefs);
-            } catch(OWLException e) {
-                System.err.println("Error (OWL): " + e);
-                System.exit(1);
-                return;
-            } catch(IOException e) {
-                System.err.println("Error (reading input file): " + e);
-                System.exit(1);
-                return;
-            }
+            do {
+                // Reason over the tree and phyloreferences.
+                // This produces a set of OWL classes and the
+                // individuals they are linked to.
+                Map<OWLClass, Set<OWLNamedIndividual>> results;
 
-            // Produce output as n-triples. We simply assert that every
-            // individual is rdf:type-d to its corresponding class.
-            for(OWLClass cl: results.keySet()) {
-                for(OWLNamedIndividual ind: results.get(cl)) {
-                    System.out.println("<" + ind.getIRI() + "> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <" + cl.getIRI() + "> .");
+                try {
+                    results = getIndividualsByClass(fTree, fPhylorefs);
+                } catch(OWLException e) {
+                    System.err.println("Error (OWL): " + e);
+                    System.exit(1);
+                    return;
+                } catch(IOException e) {
+                    System.err.println("Error (reading input file): " + e);
+                    System.exit(1);
+                    return;
                 }
-            }
+
+                // Produce output as n-triples. We simply assert that every
+                // individual is rdf:type-d to its corresponding class.
+                for(OWLClass cl: results.keySet()) {
+                    for(OWLNamedIndividual ind: results.get(cl)) {
+                        String triple = "<" + ind.getIRI() + "> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <" + cl.getIRI() + "> .";
+                        if(filter.equals("") || triple.toLowerCase().contains(filter.toLowerCase()))
+                            System.out.println(triple);
+                    }
+                }
+
+                if(console != null) {
+                    repeat = true;
+                    filter = console.readLine("Enter text to filter on or 'exit' to exit: ");
+
+                    if(filter.equalsIgnoreCase("exit"))
+                        repeat = false;
+                    else
+                        System.out.println("\n=== Filtering on '" + filter + "' ===");
+                }
+            } while(repeat);
         } 
     }
 
