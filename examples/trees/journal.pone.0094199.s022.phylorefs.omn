@@ -7,6 +7,21 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
     Import: <http://phyloinformatics.net/phyloref.owl>
     Import: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
 
+    Class: crowl_et_al:clade_A
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
+            obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Wahlenbergia_hederacea and
+                phyloref:excludes_lineage_to value crowl_et_al:Campanula_latifolia
+            ) and obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and
+                phyloref:excludes_lineage_to value crowl_et_al:Wahlenbergia_hederacea
+            )
+        )
+
+    Class: crowl_et_al:clade_A_expected
+        # TODO: how?
+
     Class: crowl_et_al:clade_C1
         SubClassOf: phyloref:Phyloreference
         EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (obo:CDAO_0000149 some (obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and phyloref:excludes_lineage_to value crowl_et_al:Trachelium_caeruleum))
@@ -99,4 +114,29 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
             crowl_et_al:Node_113,
             crowl_et_al:Node_114,
             crowl_et_al:Node_115
+        }
+
+    Class: crowl_et_al:clade_D
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
+            obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Wahlenbergia_angustifolia 
+                and phyloref:excludes_lineage_to value crowl_et_al:Heterochaenia_ensifolia
+            )
+        )
+
+    Class: crowl_et_al:clade_D_expected
+        EquivalentTo: {
+            crowl_et_al:Wahlenbergia_angustifolia,
+            crowl_et_al:Wahlenbergia_gloriosa,
+            crowl_et_al:Merciera_tenuifolia,
+            crowl_et_al:Wahlenbergia_linifolia,
+            crowl_et_al:Wahlenbergia_berteroi,
+            crowl_et_al:Heterochaenia_ensifolia,
+
+            # Internal nodes
+            crowl_et_al:Node_120,
+            crowl_et_al:Node_121,
+            crowl_et_al:Node_122,
+            crowl_et_al:Node_123
         }
