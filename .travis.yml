@@ -9,15 +9,15 @@ addons:
     packages:
       - oracle-java8-set-default
 
-# Install pip requirements.
+# Install pip requirements and compile Java code,
+# then return to the root directory.
 install: 
   - pip install --upgrade pip
   - pip install -r requirements.txt
   - pip install pytest
   - cd tests/java
-  - bash -c "echo \$JAVA_HOME"
-  - bash -c "javac -version"
   - bash -lc "mvn package"
+  - cd ../..
 
 # Run the py.test suite.
 script: py.test tests
