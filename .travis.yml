@@ -17,7 +17,7 @@ install:
   - cd tests/java
   - bash -c "echo \$JAVA_HOME"
   - bash -c "javac -version"
-  - bash -c "mvn package"
+  - bash -lc "mvn package"
 
 # Run the py.test suite.
 script: py.test tests
