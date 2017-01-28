@@ -17,7 +17,9 @@ install:
   - pip install pytest
   - cd tests/java
   - bash -lc "mvn package"
+  - jar tf target/testShacl-0.1-SNAPSHOT.jar
   - cd ../..
+  - java -version
 
 # Run the py.test suite.
-script: bash -lc "py.test tests"
+script: py.test tests
