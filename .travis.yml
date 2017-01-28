@@ -18,8 +18,9 @@ install:
   - cd tests/java
   - bash -lc "mvn package"
   - jar tf target/testShacl-0.1-SNAPSHOT.jar
-  - cd ../..
   - java -version
+  - java -jar target/testShacl-0.1-SNAPSHOT.jar  ../ValidationShapes.ttl ../../examples/trees/pg_2357.owl 
+  - cd ../..
 
 # Run the py.test suite.
 script: py.test tests
