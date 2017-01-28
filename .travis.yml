@@ -20,4 +20,4 @@ install:
   - cd ../..
 
 # Run the py.test suite.
-script: py.test tests
+script: bash -lc "py.test tests"
