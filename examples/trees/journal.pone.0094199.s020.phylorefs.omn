@@ -7,21 +7,6 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s020>
     Import: <http://phyloinformatics.net/phyloref.owl>
     Import: <http://phyloinformatics.net/phylo/journal.pone.0094199.s020>
 
-    Class: crowl_et_al:clade_A
-        SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
-            obo:CDAO_0000149 some (
-                obo:CDAO_0000174 value crowl_et_al:Wahlenbergia_hederacea and
-                phyloref:excludes_lineage_to value crowl_et_al:Campanula_latifolia
-            ) and obo:CDAO_0000149 some (
-                obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and
-                phyloref:excludes_lineage_to value crowl_et_al:Wahlenbergia_hederacea
-            )
-        )
-
-    Class: crowl_et_al:clade_A_expected
-        # TODO: how?
-
     Class: crowl_et_al:clade_C1
         SubClassOf: phyloref:Phyloreference
         EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (obo:CDAO_0000149 some (obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and phyloref:excludes_lineage_to value crowl_et_al:Trachelium_caeruleum))
@@ -159,12 +144,3 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s020>
             # Internal node
             crowl_et_al:Node_20
         }
-
-    Class: crowl_et_al:clade_H_by_branch
-        SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
-            obo:CDAO_0000149 some (
-                obo:CDAO_0000174 value crowl_et_al:Campanula_laciniata and
-                phyloref:excludes_lineage_to value crowl_et_al:Campanula_pelviformis
-            )
-        )

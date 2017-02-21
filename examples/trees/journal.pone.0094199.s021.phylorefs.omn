@@ -19,24 +19,3 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s021>
         crowl_et_al:Campanula_erinus_AC107,
         crowl_et_al:Campanula_drabifolia
     }
-
-    Class: crowl_et_al:clade_H
-        SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
-            obo:CDAO_0000149 some (
-                obo:CDAO_0000174 value crowl_et_al:Campanula_laciniata and
-                phyloref:excludes_lineage_to value crowl_et_al:Campanula_pelviformis
-            ) and obo:CDAO_0000149 some (
-                obo:CDAO_0000174 value crowl_et_al:Campanula_pelviformis and
-                phyloref:excludes_lineage_to value crowl_et_al:Campanula_laciniata
-            )
-        )
-
-    Class: crowl_et_al:clade_H_by_branch
-        SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
-            obo:CDAO_0000149 some (
-                obo:CDAO_0000174 value crowl_et_al:Campanula_laciniata and
-                phyloref:excludes_lineage_to value crowl_et_al:Campanula_pelviformis
-            )
-        )
