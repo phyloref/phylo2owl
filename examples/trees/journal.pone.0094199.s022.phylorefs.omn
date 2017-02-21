@@ -9,7 +9,7 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
 
     Class: crowl_et_al:clade_A
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
+        EquivalentTo: obo:CDAO_0000144 some (
             obo:CDAO_0000149 some (
                 obo:CDAO_0000174 value crowl_et_al:Wahlenbergia_hederacea and
                 phyloref:excludes_lineage_to value crowl_et_al:Campanula_latifolia
@@ -24,7 +24,7 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
 
     Class: crowl_et_al:clade_C1
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (obo:CDAO_0000149 some (obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and phyloref:excludes_lineage_to value crowl_et_al:Trachelium_caeruleum))
+        EquivalentTo: obo:CDAO_0000144 some (obo:CDAO_0000149 some (obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and phyloref:excludes_lineage_to value crowl_et_al:Trachelium_caeruleum))
 
     Class: crowl_et_al:clade_C1_expected
         EquivalentTo: {
@@ -118,7 +118,7 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
 
     Class: crowl_et_al:clade_D
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
+        EquivalentTo: obo:CDAO_0000144 some (
             obo:CDAO_0000149 some (
                 obo:CDAO_0000174 value crowl_et_al:Wahlenbergia_angustifolia 
                 and phyloref:excludes_lineage_to value crowl_et_al:Heterochaenia_ensifolia
@@ -143,7 +143,7 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
 
     Class: crowl_et_al:clade_G
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
+        EquivalentTo: obo:CDAO_0000144 some (
             obo:CDAO_0000149 some (
                 obo:CDAO_0000174 value crowl_et_al:Campanula_erinus
                 and phyloref:excludes_lineage_to value crowl_et_al:Campanula_drabifolia
@@ -162,7 +162,7 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
 
     Class: crowl_et_al:clade_H
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
+        EquivalentTo: obo:CDAO_0000144 some (
             obo:CDAO_0000149 some (
                 obo:CDAO_0000174 value crowl_et_al:Campanula_laciniata and
                 phyloref:excludes_lineage_to value crowl_et_al:Campanula_pelviformis
@@ -186,7 +186,7 @@ Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
 
     Class: crowl_et_al:clade_H_by_branch
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some (
+        EquivalentTo: obo:CDAO_0000144 some (
             obo:CDAO_0000149 some (
                 obo:CDAO_0000174 value crowl_et_al:Campanula_laciniata and
                 phyloref:excludes_lineage_to value crowl_et_al:Campanula_pelviformis

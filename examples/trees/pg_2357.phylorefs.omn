@@ -9,11 +9,11 @@ Ontology: <http://phyloinformatics.net/phylo/pg_2357>
 
     Class: pg_2357:Evaniscus_parent
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that phyloref:excludes_lineage_to value pg_2357:Rothevania_valdivianus and obo:CDAO_0000174 value pg_2357:Evaniscus_tibialis
+        EquivalentTo: phyloref:excludes_lineage_to value pg_2357:Rothevania_valdivianus and obo:CDAO_0000174 value pg_2357:Evaniscus_tibialis
 
     Class: pg_2357:Evaniscus_clade
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some pg_2357:Evaniscus_parent
+        EquivalentTo: obo:CDAO_0000144 some pg_2357:Evaniscus_parent
 
     Class: pg_2357:Evaniscus_clade_expected
         EquivalentTo: { 
@@ -34,11 +34,11 @@ Ontology: <http://phyloinformatics.net/phylo/pg_2357>
 
     Class: pg_2357:Evaniscus_marginatus_ex_tibialis_parent
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that phyloref:excludes_lineage_to value pg_2357:Evaniscus_tibialis and obo:CDAO_0000174 value pg_2357:Evaniscus_marginatus
+        EquivalentTo: phyloref:excludes_lineage_to value pg_2357:Evaniscus_tibialis and obo:CDAO_0000174 value pg_2357:Evaniscus_marginatus
 
     Class: pg_2357:Evaniscus_marginatus_ex_tibialis_clade
         SubClassOf: phyloref:Phyloreference
-        EquivalentTo: obo:CDAO_0000140 that obo:CDAO_0000144 some pg_2357:Evaniscus_marginatus_ex_tibialis_parent
+        EquivalentTo: obo:CDAO_0000144 some pg_2357:Evaniscus_marginatus_ex_tibialis_parent
 
     Class: pg_2357:Evaniscus_marginatus_ex_tibialis_clade_expected
         EquivalentTo: {
