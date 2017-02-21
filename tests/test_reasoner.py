@@ -8,7 +8,10 @@ import subprocess
 import xml.sax
 from libreasoner import validateWithReasoner
 
-def test_execute():
-    """ Validate one tree against its phyloreferences. """
-    validateWithReasoner('../../examples/trees/pg_2357.owl', '../../examples/trees/pg_2357.phylorefs.omn')
+def test_phylorefs_using_reasoner(path_owl):
+    """ Validate tree against its phyloreferences. """
+
+    path_phylorefs = path_owl[:-3] + "phylorefs.omn"
+
+    validateWithReasoner(path_owl, path_phylorefs)
 
