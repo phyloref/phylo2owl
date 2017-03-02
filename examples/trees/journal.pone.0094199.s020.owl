@@ -1,0 +1,2300 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY phyloref "http://phyloinformatics.net/phyloref.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY journal.pone.0094199.s020 "http://phyloinformatics.net/phylo/journal.pone.0094199.s020#" >
+]>
+
+<rdf:RDF xmlns="http://phyloinformatics.net/phylo/journal.pone.0094199.s020#"
+     xml:base="http://phyloinformatics.net/phylo/journal.pone.0094199.s020"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:journal.pone.0094199.s020="http://phyloinformatics.net/phylo/journal.pone.0094199.s020#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:phyloref="http://phyloinformatics.net/phyloref.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://phyloinformatics.net/phylo/journal.pone.0094199.s020">
+        <owl:imports rdf:resource="http://phyloinformatics.net/phyloref.owl"/>
+        <owl:imports rdf:resource="&obo;cdao.owl"/>
+    </owl:Ontology>
+    
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- Insert phyloreferences here -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_1 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_1">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_2"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Cyphia_elata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_2 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_2">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_3"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_124"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Cyphia_elata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_3 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_3">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_4"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_9"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_124"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_4 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_4">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Heterochaenia_ensifolia"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_5"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_9"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Heterochaenia_ensifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Heterochaenia_ensifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_5"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_5 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_5">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_6"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_7"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Heterochaenia_ensifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_6 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_6">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_berteroi"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_linifolia"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_7"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Wahlenbergia_berteroi -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Wahlenbergia_berteroi">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_linifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Wahlenbergia_linifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Wahlenbergia_linifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_berteroi"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_7 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_7">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Merciera_tenuifolia"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_8"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_6"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Merciera_tenuifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Merciera_tenuifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_8"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_8 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_8">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_gloriosa"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_angustifolia"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Merciera_tenuifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Wahlenbergia_gloriosa -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Wahlenbergia_gloriosa">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_angustifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Wahlenbergia_angustifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Wahlenbergia_angustifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_gloriosa"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_9 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_9">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_10"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_14"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_4"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_10 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_10">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_hederacea"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_11"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_14"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Wahlenbergia_hederacea -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Wahlenbergia_hederacea">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_11"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_11 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_11">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Jasione_montana"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_12"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Wahlenbergia_hederacea"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Jasione_montana -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Jasione_montana">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_12"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_12 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_12">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_13"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Jasione_laevis"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Jasione_montana"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_13 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_13">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Jasione_crispa"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Jasione_heldreichii"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Jasione_laevis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Jasione_crispa -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Jasione_crispa">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Jasione_heldreichii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Jasione_heldreichii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Jasione_heldreichii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Jasione_crispa"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Jasione_laevis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Jasione_laevis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_13"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_14 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_14">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_15"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_122"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_10"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_15 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_15">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_16"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_58"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_122"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_16 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_16">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Trachelium_caeruleum"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_17"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_58"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Trachelium_caeruleum -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Trachelium_caeruleum">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_17"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_17 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_17">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_18"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_24"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Trachelium_caeruleum"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_18 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_18">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_19"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_21"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_24"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_19 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_19">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_20"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_drabifolia"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_21"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_20 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_20">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_creutzburgii"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_erinus"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_drabifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_creutzburgii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_creutzburgii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_erinus"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_erinus -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_erinus">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_creutzburgii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_drabifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_drabifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_20"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_21 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_21">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Azorina_vidalii"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_22"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_19"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Azorina_vidalii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Azorina_vidalii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_22"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_22 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_22">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Feeria_angustifolia"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_23"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Azorina_vidalii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Feeria_angustifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Feeria_angustifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_23"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_23 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_23">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_mollis"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_edulis"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Feeria_angustifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_mollis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_mollis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_edulis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_edulis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_edulis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_mollis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_24 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_24">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_jacquinii"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_25"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_18"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_jacquinii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_jacquinii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_25"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_25 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_25">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_26"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_incurva"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_jacquinii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_26 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_26">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_27"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_30"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_incurva"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_27 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_27">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_28"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_carpatha"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_30"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_28 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_28">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_laciniata"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_29"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_carpatha"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_laciniata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_laciniata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_29"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_29 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_29">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_pelviformis"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_tubulosa"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_laciniata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_pelviformis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_pelviformis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_tubulosa"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_tubulosa -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_tubulosa">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_pelviformis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_carpatha -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_carpatha">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_28"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_30 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_30">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_31"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_33"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_27"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_31 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_31">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_cervicaria"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_32"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_33"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_cervicaria -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_cervicaria">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_32"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_32 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_32">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_alpestris"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_medium"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_cervicaria"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_alpestris -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_alpestris">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_medium"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_medium -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_medium">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_alpestris"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_33 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_33">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_34"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_56"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_31"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_34 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_34">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_35"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_37"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_56"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_35 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_35">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_hierapetrae"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_36"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_37"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_hierapetrae -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_hierapetrae">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_36"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_36 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_36">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Michauxia_tchihatchewii"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_foliosa"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_hierapetrae"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Michauxia_tchihatchewii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Michauxia_tchihatchewii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_foliosa"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_foliosa -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_foliosa">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Michauxia_tchihatchewii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_37 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_37">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_38"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_41"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_35"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_38 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_38">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Edraianthus_graminifolius"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_39"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_41"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Edraianthus_graminifolius -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Edraianthus_graminifolius">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_39"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_39 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_39">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_40"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_petraea"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Edraianthus_graminifolius"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_40 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_40">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_thyrsoides"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_spicata"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_petraea"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_thyrsoides -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_thyrsoides">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_spicata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_spicata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_spicata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_thyrsoides"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_petraea -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_petraea">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_40"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_41 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_41">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_42"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_55"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_38"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_42 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_42">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_43"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_51"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_55"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_43 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_43">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Symphyandra_hofmanni"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_44"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_51"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Symphyandra_hofmanni -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Symphyandra_hofmanni">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_44"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_44 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_44">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_alliariifolia"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_45"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Symphyandra_hofmanni"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_alliariifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_alliariifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_45"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_45 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_45">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_46"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_48"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_alliariifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_46 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_46">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Symphyandra_pendula"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_47"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_48"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Symphyandra_pendula -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Symphyandra_pendula">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_47"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_47 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_47">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_bellidifolia"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_aucheri"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Symphyandra_pendula"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_bellidifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_bellidifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_aucheri"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_aucheri -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_aucheri">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_bellidifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_48 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_48">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_sibirica"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_49"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_46"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_sibirica -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_sibirica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_49"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_49 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_49">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_50"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_bononiensis"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_sibirica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_50 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_50">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_rapunculoides"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_grossheimii"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_bononiensis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_rapunculoides -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_rapunculoides">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_grossheimii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_grossheimii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_grossheimii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_rapunculoides"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_bononiensis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_bononiensis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_50"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_51 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_51">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_barbata"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_52"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_43"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_barbata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_barbata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_52"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_52 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_52">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_53"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_54"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_barbata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_53 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_53">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_trachelium"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_latifolia"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_54"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_trachelium -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_trachelium">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_latifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_latifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_latifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_trachelium"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_54 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_54">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_mirabilis"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_sarmatica"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_53"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_mirabilis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_mirabilis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_sarmatica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_sarmatica -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_sarmatica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_mirabilis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_55 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_55">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_macrostachya"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_glomerata"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_42"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_macrostachya -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_macrostachya">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_glomerata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_glomerata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_glomerata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_macrostachya"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_56 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_56">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Symphyandra_armena"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_57"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_34"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Symphyandra_armena -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Symphyandra_armena">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_57"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_57 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_57">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_lanata"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_saxatilis"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Symphyandra_armena"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_lanata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_lanata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_saxatilis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_saxatilis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_saxatilis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_lanata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_incurva -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_incurva">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_26"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_58 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_58">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_59"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_101"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_16"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_59 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_59">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Hanabusaya_asiatica"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_60"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_101"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Hanabusaya_asiatica -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Hanabusaya_asiatica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_60"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_60 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_60">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_61"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_aizoides"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Hanabusaya_asiatica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_61 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_61">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_62"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_100"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_aizoides"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_62 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_62">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_63"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_96"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_100"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_63 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_63">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_hawkinsiana"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_64"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_96"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_hawkinsiana -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_hawkinsiana">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_64"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_64 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_64">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_65"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_67"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_hawkinsiana"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_65 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_65">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_carpatica"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_66"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_67"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_carpatica -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_carpatica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_66"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_66 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_66">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_versicolor"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_pyramidalis"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_carpatica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_versicolor -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_versicolor">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_pyramidalis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_pyramidalis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_pyramidalis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_versicolor"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_67 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_67">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_68"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_95"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_65"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_68 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_68">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_69"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_72"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_95"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_69 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_69">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_70"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_cenisia"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_72"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_70 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_70">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_71"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_elatinoides"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_cenisia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_71 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_71">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_arvatica"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_herminii"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_elatinoides"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_arvatica -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_arvatica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_herminii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_herminii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_herminii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_arvatica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_elatinoides -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_elatinoides">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_71"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_cenisia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_cenisia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_70"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_72 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_72">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_73"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_93"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_69"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_73 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_73">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_74"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_excisa"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_93"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_74 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_74">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_75"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_79"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_excisa"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_75 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_75">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_76"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_78"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_79"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_76 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_76">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_77"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_rhomboidalis"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_78"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_77 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_77">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_witasekiana"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_scheuchzeri"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_rhomboidalis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_witasekiana -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_witasekiana">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_scheuchzeri"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_scheuchzeri -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_scheuchzeri">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_witasekiana"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_rhomboidalis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_rhomboidalis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_77"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_78 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_78">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_appenina"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_stenocodon"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_76"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_appenina -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_appenina">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_stenocodon"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_stenocodon -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_stenocodon">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_appenina"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_79 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_79">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_80"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_92"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_75"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_80 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_80">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_carnica_cfr"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_81"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_92"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_carnica_cfr -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_carnica_cfr">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_81"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_81 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_81">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_82"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_carnica"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_carnica_cfr"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_82 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_82">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_83"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_85"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_carnica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_83 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_83">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_bertolae_3"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_84"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_85"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_bertolae_3 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_bertolae_3">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_84"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_84 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_84">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_bertolae"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_bertolae_2"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_bertolae_3"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_bertolae -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_bertolae">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_bertolae_2"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_bertolae_2 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_bertolae_2">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_bertolae"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_85 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_85">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_86"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_sabatia"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_83"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_86 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_86">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_87"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_89"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_sabatia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_87 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_87">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_rotundifolia"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_88"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_89"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_rotundifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_rotundifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_88"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_88 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_88">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_marchesettii"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_marchesettii_2"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_rotundifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_marchesettii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_marchesettii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_marchesettii_2"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_marchesettii_2 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_marchesettii_2">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_marchesettii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_89 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_89">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_90"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_brixiensis_4"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_87"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_90 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_90">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_brixiensis_2"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_91"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_brixiensis_4"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_brixiensis_2 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_brixiensis_2">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_91"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_91 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_91">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_brixiensis"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_brixiensis_3"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_brixiensis_2"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_brixiensis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_brixiensis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_brixiensis_3"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_brixiensis_3 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_brixiensis_3">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_brixiensis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_brixiensis_4 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_brixiensis_4">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_90"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_sabatia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_sabatia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_86"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_carnica -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_carnica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_82"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_92 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_92">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_macrorhiza"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_forsythii"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_80"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_macrorhiza -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_macrorhiza">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_forsythii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_forsythii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_forsythii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_macrorhiza"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_excisa -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_excisa">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_74"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_93 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_93">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_fragilis"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_94"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_73"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_fragilis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_fragilis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_94"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_94 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_94">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_cochlearifolia"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_caespitosa"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_fragilis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_cochlearifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_cochlearifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_caespitosa"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_caespitosa -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_caespitosa">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_cochlearifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_95 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_95">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_parryi"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_divaricata"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_68"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_parryi -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_parryi">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_divaricata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_divaricata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_divaricata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_parryi"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_96 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_96">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_lusitanica"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_97"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_63"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_lusitanica -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_lusitanica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_97"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_97 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_97">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_98"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_rapunculus"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_lusitanica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_98 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_98">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_99"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_patula"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_rapunculus"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_99 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_99">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_spatulata_cfr"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_spatulata"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_patula"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_spatulata_cfr -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_spatulata_cfr">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_spatulata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_spatulata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_spatulata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_spatulata_cfr"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_patula -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_patula">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_99"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_rapunculus -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_rapunculus">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_98"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_100 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_100">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_elatines"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_portenschlagiana"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_62"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_elatines -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_elatines">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_portenschlagiana"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_portenschlagiana -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_portenschlagiana">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_elatines"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_aizoides -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_aizoides">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_61"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_101 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_101">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_102"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_117"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_59"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_102 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_102">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_103"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_persicifolia"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_117"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_103 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_103">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Phyteuma_spicatum"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_104"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_persicifolia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Phyteuma_spicatum -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Phyteuma_spicatum">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_104"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_104 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_104">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_105"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_109"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Phyteuma_spicatum"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_105 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_105">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Physoplexis_comosa"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_106"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_109"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Physoplexis_comosa -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Physoplexis_comosa">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_106"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_106 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_106">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Petromarula_pinnata"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_107"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Physoplexis_comosa"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Petromarula_pinnata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Petromarula_pinnata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_107"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_107 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_107">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Phyteuma_scheuchzeri"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_108"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Petromarula_pinnata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Phyteuma_scheuchzeri -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Phyteuma_scheuchzeri">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_108"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_108 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_108">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Phyteuma_serratum"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Phyteuma_sieberi"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Phyteuma_scheuchzeri"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Phyteuma_serratum -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Phyteuma_serratum">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Phyteuma_sieberi"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Phyteuma_sieberi -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Phyteuma_sieberi">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Phyteuma_serratum"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_109 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_109">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_110"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_111"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_105"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_110 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_110">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Asyneuma_virgatum"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_cretica"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_111"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Asyneuma_virgatum -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Asyneuma_virgatum">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_cretica"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_cretica -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_cretica">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Asyneuma_virgatum"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_111 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_111">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_112"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_114"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_110"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_112 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_112">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Legousia_pentagonia"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_113"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_114"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Legousia_pentagonia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Legousia_pentagonia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_113"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_113 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_113">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Legousia_hybrida"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Legousia_speculum_veneris"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Legousia_pentagonia"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Legousia_hybrida -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Legousia_hybrida">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Legousia_speculum_veneris"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Legousia_speculum_veneris -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Legousia_speculum_veneris">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Legousia_hybrida"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_114 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_114">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_115"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Legousia_falcata"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_112"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_115 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_115">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_116"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_reverchonii"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Legousia_falcata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_116 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_116">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Triodanis_coloradoensis"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Triodanis_perfoliolata"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_reverchonii"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Triodanis_coloradoensis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Triodanis_coloradoensis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Triodanis_perfoliolata"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Triodanis_perfoliolata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Triodanis_perfoliolata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Triodanis_coloradoensis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_reverchonii -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_reverchonii">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_116"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Legousia_falcata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Legousia_falcata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_115"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_persicifolia -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_persicifolia">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_103"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_117 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_117">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_robinsiae"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_118"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_102"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_robinsiae -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_robinsiae">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_118"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_118 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_118">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_scouleri"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_119"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_robinsiae"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_scouleri -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_scouleri">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_119"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_119 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_119">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_120"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_exigua"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_scouleri"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_120 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_120">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_121"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Heterocodon_rariflorum"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_exigua"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_121 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_121">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Githopsis_diffusa"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Githopsis_pulchella"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Heterocodon_rariflorum"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Githopsis_diffusa -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Githopsis_diffusa">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Githopsis_pulchella"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Githopsis_pulchella -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Githopsis_pulchella">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Githopsis_diffusa"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Heterocodon_rariflorum -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Heterocodon_rariflorum">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_121"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_exigua -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_exigua">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_120"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_122 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_122">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Gadellia_lactiflora"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Node_123"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_15"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Gadellia_lactiflora -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Gadellia_lactiflora">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_123"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_123 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_123">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Musschia_aurea"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Campanula_peregrina"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Gadellia_lactiflora"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Musschia_aurea -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Musschia_aurea">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Campanula_peregrina"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Campanula_peregrina -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Campanula_peregrina">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Musschia_aurea"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Node_124 -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Node_124">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Platycodon_grandiflorus"/>
+        <obo:CDAO_0000149 rdf:resource="&journal.pone.0094199.s020;Canarina_canariensis"/>
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_3"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Platycodon_grandiflorus -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Platycodon_grandiflorus">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Canarina_canariensis"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Canarina_canariensis -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Canarina_canariensis">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Platycodon_grandiflorus"/>
+    </owl:Thing>
+
+    <!-- http://phyloinformatics.net/phylo/journal.pone.0094199.s020#Cyphia_elata -->
+
+    <owl:Thing rdf:about="&journal.pone.0094199.s020;Cyphia_elata">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&obo;CDAO_0000140" />
+        <phyloref:has_Sibling rdf:resource="&journal.pone.0094199.s020;Node_2"/>
+    </owl:Thing>
+
+</rdf:RDF>

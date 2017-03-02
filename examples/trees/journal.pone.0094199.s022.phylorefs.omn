@@ -1,0 +1,197 @@
+Prefix: crowl_et_al: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022#>
+Prefix: obo: <http://purl.obolibrary.org/obo/>
+Prefix: phyloref: <http://phyloinformatics.net/phyloref.owl#>
+
+Ontology: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
+    Import: <http://purl.obolibrary.org/obo/cdao.owl>
+    Import: <http://phyloinformatics.net/phyloref.owl>
+    Import: <http://phyloinformatics.net/phylo/journal.pone.0094199.s022>
+
+    Class: crowl_et_al:clade_A
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000144 some (
+            obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Wahlenbergia_hederacea and
+                phyloref:excludes_lineage_to value crowl_et_al:Campanula_latifolia
+            ) and obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and
+                phyloref:excludes_lineage_to value crowl_et_al:Wahlenbergia_hederacea
+            )
+        )
+
+    Class: crowl_et_al:clade_A_expected
+        # TODO: how?
+
+    Class: crowl_et_al:clade_C1
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000144 some (obo:CDAO_0000149 some (obo:CDAO_0000174 value crowl_et_al:Campanula_latifolia and phyloref:excludes_lineage_to value crowl_et_al:Trachelium_caeruleum))
+
+    Class: crowl_et_al:clade_C1_expected
+        EquivalentTo: {
+            crowl_et_al:Azorina_vidalii,
+            crowl_et_al:Campanula_alliariifolia,
+            crowl_et_al:Campanula_alpestris,
+            crowl_et_al:Campanula_aucheri,
+            crowl_et_al:Campanula_barbata,
+            crowl_et_al:Campanula_bellidifolia,
+            crowl_et_al:Campanula_bononiensis,
+            crowl_et_al:Campanula_carpatha,
+            crowl_et_al:Campanula_cervicaria,
+            crowl_et_al:Campanula_creutzburgii,
+            crowl_et_al:Campanula_drabifolia,
+            crowl_et_al:Campanula_edulis,
+            crowl_et_al:Campanula_erinus,
+            crowl_et_al:Campanula_foliosa,
+            crowl_et_al:Campanula_glomerata,
+            crowl_et_al:Campanula_grossheimii,
+            crowl_et_al:Campanula_hierapetrae,
+            crowl_et_al:Campanula_incurva,
+            crowl_et_al:Campanula_jacquinii,
+            crowl_et_al:Campanula_laciniata,
+            crowl_et_al:Campanula_lanata,
+            crowl_et_al:Campanula_latifolia,
+            crowl_et_al:Campanula_macrostachya,
+            crowl_et_al:Campanula_medium,
+            crowl_et_al:Campanula_mirabilis,
+            crowl_et_al:Campanula_mollis,
+            crowl_et_al:Campanula_pelviformis,
+            crowl_et_al:Campanula_petraea,
+            crowl_et_al:Campanula_rapunculoides,
+            crowl_et_al:Campanula_sarmatica,
+            crowl_et_al:Campanula_saxatilis,
+            crowl_et_al:Campanula_sibirica,
+            crowl_et_al:Campanula_spicata,
+            crowl_et_al:Campanula_thyrsoides,
+            crowl_et_al:Campanula_trachelium,
+            crowl_et_al:Campanula_tubulosa,
+            crowl_et_al:Edraianthus_graminifolius,
+            crowl_et_al:Feeria_angustifolia,
+            crowl_et_al:Michauxia_tchihatchewii,
+            crowl_et_al:Symphyandra_armena,
+            crowl_et_al:Symphyandra_hofmanni,
+            crowl_et_al:Symphyandra_pendula,
+            crowl_et_al:Trachelium_caeruleum,
+
+            # Internal nodes
+            crowl_et_al:Node_75,
+            crowl_et_al:Node_76,
+            crowl_et_al:Node_77,
+            crowl_et_al:Node_78,
+            crowl_et_al:Node_79,
+            crowl_et_al:Node_80,
+            crowl_et_al:Node_81,
+            crowl_et_al:Node_82,
+            crowl_et_al:Node_83,
+            crowl_et_al:Node_84,
+            crowl_et_al:Node_85,
+            crowl_et_al:Node_86,
+            crowl_et_al:Node_87,
+            crowl_et_al:Node_88,
+            crowl_et_al:Node_89,
+            crowl_et_al:Node_90,
+            crowl_et_al:Node_91,
+            crowl_et_al:Node_92,
+            crowl_et_al:Node_93,
+            crowl_et_al:Node_94,
+            crowl_et_al:Node_95,
+            crowl_et_al:Node_96,
+            crowl_et_al:Node_97,
+            crowl_et_al:Node_98,
+            crowl_et_al:Node_99,
+            crowl_et_al:Node_100,
+            crowl_et_al:Node_101,
+            crowl_et_al:Node_102,
+            crowl_et_al:Node_103,
+            crowl_et_al:Node_104,
+            crowl_et_al:Node_105,
+            crowl_et_al:Node_106,
+            crowl_et_al:Node_107,
+            crowl_et_al:Node_108,
+            crowl_et_al:Node_109,
+            crowl_et_al:Node_110,
+            crowl_et_al:Node_111,
+            crowl_et_al:Node_112,
+            crowl_et_al:Node_113,
+            crowl_et_al:Node_114,
+            crowl_et_al:Node_115
+        }
+
+    Class: crowl_et_al:clade_D
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000144 some (
+            obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Wahlenbergia_angustifolia 
+                and phyloref:excludes_lineage_to value crowl_et_al:Heterochaenia_ensifolia
+            )
+        )
+
+    Class: crowl_et_al:clade_D_expected
+        EquivalentTo: {
+            crowl_et_al:Wahlenbergia_angustifolia,
+            crowl_et_al:Wahlenbergia_gloriosa,
+            crowl_et_al:Merciera_tenuifolia,
+            crowl_et_al:Wahlenbergia_linifolia,
+            crowl_et_al:Wahlenbergia_berteroi,
+            crowl_et_al:Heterochaenia_ensifolia,
+
+            # Internal nodes
+            crowl_et_al:Node_120,
+            crowl_et_al:Node_121,
+            crowl_et_al:Node_122,
+            crowl_et_al:Node_123
+        }
+
+    Class: crowl_et_al:clade_G
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000144 some (
+            obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Campanula_erinus
+                and phyloref:excludes_lineage_to value crowl_et_al:Campanula_drabifolia
+            )
+        )
+
+    Class: crowl_et_al:clade_G_expected
+        EquivalentTo: {
+            crowl_et_al:Campanula_creutzburgii,
+            crowl_et_al:Campanula_erinus,
+            crowl_et_al:Campanula_drabifolia,
+
+            # Internal node
+            crowl_et_al:Node_81
+        }
+
+    Class: crowl_et_al:clade_H
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000144 some (
+            obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Campanula_laciniata and
+                phyloref:excludes_lineage_to value crowl_et_al:Campanula_pelviformis
+            ) and obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Campanula_pelviformis and
+                phyloref:excludes_lineage_to value crowl_et_al:Campanula_laciniata
+            )
+        )
+
+    Class: crowl_et_al:clade_H_expected
+        EquivalentTo: {
+            crowl_et_al:Campanula_laciniata,
+            crowl_et_al:Campanula_carpatha,
+            crowl_et_al:Campanula_pelviformis,
+            crowl_et_al:Campanula_tubulosa,
+
+            # Internal nodes -- but we're missing the ancestral node!
+            crowl_et_al:Node_109,
+            crowl_et_al:Node_110
+        }
+
+    Class: crowl_et_al:clade_H_by_branch
+        SubClassOf: phyloref:Phyloreference
+        EquivalentTo: obo:CDAO_0000144 some (
+            obo:CDAO_0000149 some (
+                obo:CDAO_0000174 value crowl_et_al:Campanula_laciniata and
+                phyloref:excludes_lineage_to value crowl_et_al:Campanula_pelviformis
+            )
+        )
+
+    Class: crowl_et_al:clade_H_by_branch_expected
+        EquivalentTo: crowl_et_al:clade_H_expected
