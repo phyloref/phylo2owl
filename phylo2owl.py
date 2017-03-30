@@ -95,12 +95,12 @@ if FLAG_VERBOSE:
     sys.stderr.write("Tree read successfully: {0}\n".format(tree))
 
 # Step 3. Set up pystache to read templates.
-render = pystache.Renderer(missing_tags='strict')
+render = pystache.Renderer(missing_tags='strict', search_dirs=os.path.dirname(os.path.abspath(__file__)) + '/templates')
 
 # Step 4. Write out the header.
 xmlbase = "http://phyloinformatics.net/phylo/{0}".format(output_name)
 xmlns = xmlbase + '#'
-output_file.write(render.render_path('templates/header.txt', {
+output_file.write(render.render_name('header', {
     'name': output_name,
     'xmlbase': xmlbase,
     'xmlns': xmlbase + '#'
@@ -131,7 +131,7 @@ if FLAG_VERBOSE:
 import inspect
 node_count = 1
 for node in tree:
-    output_file.write(render.render_path('templates/individual.txt', {
+    output_file.write(render.render_name('individual', {
         'xmlns': xmlns,
         'term': node_names[node],
         'name': output_name,
@@ -140,5 +140,5 @@ for node in tree:
     }))
 
 # Step 7. Write out the footer.
-output_file.write(render.render_path('templates/footer.txt'))
+output_file.write(render.render_name('footer'))
 sys.exit(0)
