@@ -1,6 +1,10 @@
-# phylo2owl
+# phylo2owl - convert phylogenies to OWL ontologies
 
 [![Build Status](https://travis-ci.org/phyloref/phylo2owl.svg?branch=master)](https://travis-ci.org/phyloref/phylo2owl)
+
+phylo2owl is a tool that takes a phylogeny as input and converts it into an OWL ontology, using several ancillary ontologies (such as [CDAO], [Phyloref]) to express relationships (edges) between entities (vertices).
+
+Converting phylogenies into OWL ontologies is one of the foundational steps in using an OWL reasoner to resolve a phyloreference expression (which is a series of OWL axioms) against a phylogeny.
 
 ## Synopsis
 
@@ -77,3 +81,6 @@ libraries we considered include:
     - https://github.com/nexml/nexml.java 
     - https://github.com/cmzmasek/forester/tree/master/forester/java/src/org/forester/io/parsers 
     - http://owlapi.sourceforge.net/ 
+
+[CDAO]: http://www.ontobee.org/ontology/CDAO
+[Phyloref]: https://github.com/hlapp/phyloref
