@@ -16,4 +16,4 @@ install:
   - pip install pytest
 
 # Run the py.test suite.
-script: py.test --pylint -v tests
+script: py.test --pylint --pylint-error-types=EF -v tests
