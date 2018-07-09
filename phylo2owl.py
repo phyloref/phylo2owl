@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-phylo2owl.py: Convert phylogenies into OWL ontologies expressed in RDF/XML.
+phylo2owl.py: Convert phylogenies into OWL ontologies.
 """
 
 import os.path
@@ -30,7 +30,7 @@ def main():
 
     # Step 1. Parse command line arguments
     cmdline_parser = argparse.ArgumentParser(
-        description="Convert phylogenies into OWL ontologies expressed in RDF/XML."
+        description="Convert phylogenies into OWL ontologies."
     )
     cmdline_parser.add_argument(
         'input_filename',

@@ -34,6 +34,6 @@ def paths_by_extension(extension):
     paths = []
     for filename in os.listdir(EXAMPLES_DIR):
         if fnmatch.fnmatch(filename, "*." + extension):
-            paths.append(EXAMPLES_DIR + "/" + filename)
+            paths.append(os.path.join(EXAMPLES_DIR, filename))
 
     return paths

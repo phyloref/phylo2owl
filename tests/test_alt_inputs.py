@@ -15,8 +15,6 @@ def test_newick_convert_to_OWL(path_tre):
     Test all .tre files by comparing them to the corresponding .owl file.
     """
 
-    #pylint: disable=C0103
-
     # This might seem redundant, but it tests that '--format newick' works.
 
     path_owl = path_tre[:-4] + '.owl'
@@ -31,8 +29,6 @@ def test_newick_convert_to_OWL(path_tre):
 def test_nexus_convert_to_OWL(path_nex):
     """ Test all .nex files by comparing them to the corresponding .owl file. """
 
-    #pylint: disable=C0103
-
     path_owl = path_nex[:-4] + '.owl'
     if os.path.isfile(path_owl):
         compare_example_file(path_nex, 'NEXUS', path_owl)
@@ -44,8 +40,6 @@ def test_nexus_convert_to_OWL(path_nex):
 
 def test_nexml_convert_to_OWL(path_nexml):
     """ Test all .nexml files by comparing them to the corresponding .owl file. """
-
-    #pylint: disable=C0103
 
     path_owl = path_nexml[:-6] + '.owl'
     if os.path.isfile(path_owl):
