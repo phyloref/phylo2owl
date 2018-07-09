@@ -1,17 +1,16 @@
 """
-conftest.py: Sets up some fixures to simplify test writing. 
+conftest.py: Sets up some fixures to simplify test writing.
 """
 
-import pytest
 import os
 import fnmatch
 
-examples_dir = "examples/trees"
+EXAMPLES_DIR = "examples/trees"
 
 def pytest_namespace():
     """ Set some global pytest variables, accessible as e.g. pytest.basedir """
     return {
-        'basedir': examples_dir + '/'
+        'basedir': EXAMPLES_DIR + '/'
     }
 
 def pytest_generate_tests(metafunc):
@@ -33,8 +32,8 @@ def paths_by_extension(extension):
     """ Return a list of files in the examples directory that has a particular extension. """
 
     paths = []
-    for filename in os.listdir(examples_dir):
+    for filename in os.listdir(EXAMPLES_DIR):
         if fnmatch.fnmatch(filename, "*." + extension):
-            paths.append(examples_dir + "/" + filename)
+            paths.append(os.path.join(EXAMPLES_DIR, filename))
 
     return paths

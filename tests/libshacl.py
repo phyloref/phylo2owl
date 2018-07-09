@@ -5,13 +5,11 @@ libshacl.py: Library of functions for communicating with the SHACL Java
 executable.
 """
 
-import os
-import rdflib
 import subprocess
 import xml.sax
+import rdflib
 
-
-def exec_testShacl(args):
+def exec_test_shacl(args):
     """
     Execute testShacl.jar with the provided command line arguments (args).
     Returns: (exitcode, stdout_as_string, stderr_as_string)
@@ -31,7 +29,7 @@ def exec_testShacl(args):
         raise RuntimeError("Could not execute " + ' '.join(shacl_exec))
     return (process.returncode, stdout, stderr)
 
-def validateShacl(shapePath, owlPath, expect_valid=True):
+def validate_shacl(shape_path, owl_path, expect_valid=True):
     """
     Validate a shape file against an OWL ontology representation of a tree.
         - shapePath: the path to the shape file to validate
@@ -43,21 +41,21 @@ def validateShacl(shapePath, owlPath, expect_valid=True):
     Uses assert() statements for its tests, so it's designed to be used
     within py.test or a similar framework.
     """
-    (rc, stdout, stderr) = exec_testShacl([shapePath, owlPath])
+    (return_code, stdout, stderr) = exec_test_shacl([shape_path, owl_path])
     print stdout
     print stderr
-    assert rc == (0 if expect_valid else 1)
+    assert return_code == (0 if expect_valid else 1)
 
     # stdout should always be a Turtle document.
     graph = rdflib.Graph()
     try:
         graph.parse(format='turtle', data=stdout)
-    except xml.sax.SAXParseException as e:
-        print "SAXParseException parsing '{0}': {1}".format(tree, e)
+    except xml.sax.SAXParseException as exception:
+        print "SAXParseException parsing '{0}': {1}".format(stdout, exception)
         assert False
 
     # There should be no triples if it's valid; otherwise, there will be some.
     if expect_valid:
-        assert len(graph) == 0
+        assert not graph, "Validating with Shacl should produce empty output"
     else:
-        assert len(graph) > 0
+        assert graph, "Validating with Shacl should find errors"
