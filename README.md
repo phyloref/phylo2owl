@@ -2,6 +2,12 @@
 
 [![Build Status](https://travis-ci.org/phyloref/phylo2owl.svg?branch=master)](https://travis-ci.org/phyloref/phylo2owl)
 
+> **⚠️ Deprecated:** phylo2owl is no longer maintained. It uses an older
+> representation of phylogenies that predates the [Phyx] format, and its
+> output is out of date. To convert Phyx files into OWL ontologies, use
+> [`phyx2owl.mjs`](https://github.com/phyloref/phyx.js/blob/master/bin/phyx2owl.mjs)
+> from [phyx.js](https://github.com/phyloref/phyx.js) instead.
+
 phylo2owl is a tool that takes a phylogeny as input and converts it into an OWL ontology, using several ancillary ontologies (such as [CDAO], [Phyloref]) to express relationships (edges) between entities (vertices).
 
 Converting phylogenies into OWL ontologies is one of the foundational steps in using an OWL reasoner to resolve a phyloreference expression (which is a series of OWL axioms) against a phylogeny.
@@ -84,3 +90,4 @@ libraries we considered include:
 
 [CDAO]: http://www.ontobee.org/ontology/CDAO
 [Phyloref]: https://github.com/hlapp/phyloref
+[Phyx]: https://doi.org/10.7717/peerj.12618
