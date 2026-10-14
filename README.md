@@ -2,11 +2,18 @@
 
 [![Build Status](https://travis-ci.org/phyloref/phylo2owl.svg?branch=master)](https://travis-ci.org/phyloref/phylo2owl)
 
-> **⚠️ Deprecated:** phylo2owl is no longer maintained. It uses an older
-> representation of phylogenies that predates the [Phyx] format, and its
-> output is out of date. To convert Phyx files into OWL ontologies, use
+> **⚠️ Deprecated:** phylo2owl is archived and will not receive further
+> improvements or bug fixes. It reads a phylogeny in Newick, NEXUS or NeXML
+> (using [DendroPy]) and writes it out as an OWL ontology using Mustache
+> templates, so it may still be useful as a starting point for similar code.
+> Its OWL representation predates the [Phyx] format and is out of date.
+>
+> This functionality is now provided by [phyx.js](https://github.com/phyloref/phyx.js):
+> [`PhylogenyWrapper`](https://www.phyloref.org/phyx.js/phylogenywrapper/)
+> converts a Newick phylogeny into OWL, and the
 > [`phyx2owl.mjs`](https://github.com/phyloref/phyx.js/blob/master/bin/phyx2owl.mjs)
-> from [phyx.js](https://github.com/phyloref/phyx.js) instead.
+> command-line tool converts a Phyx file (which may contain only phylogenies)
+> into an OWL ontology.
 
 phylo2owl is a tool that takes a phylogeny as input and converts it into an OWL ontology, using several ancillary ontologies (such as [CDAO], [Phyloref]) to express relationships (edges) between entities (vertices).
 
@@ -91,3 +98,4 @@ libraries we considered include:
 [CDAO]: http://www.ontobee.org/ontology/CDAO
 [Phyloref]: https://github.com/hlapp/phyloref
 [Phyx]: https://doi.org/10.7717/peerj.12618
+[DendroPy]: https://dendropy.org/
